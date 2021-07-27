@@ -3,7 +3,7 @@ import styles from '../../styles/login.module.css'
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import { TextField, Typography, FormControl, OutlinedInput, InputAdornment, IconButton } from '@material-ui/core';
-export const PasswordInput = ({ userData, changeHandler, focusHandler, focus, blurHandler, clickHandler }) => {
+export const PasswordInput = ({ userData, changeHandler, focusHandler, focus, blurHandler, clickHandler, name }) => {
     return (
         <>
             <FormControl fullWidth className={styles.input_container} variant="outlined">
@@ -14,9 +14,9 @@ export const PasswordInput = ({ userData, changeHandler, focusHandler, focus, bl
                     type={userData.formData.password.showPassword ? 'text' : 'password'}
                     value={userData.formData.password.value}
                     onChange={changeHandler}
-                    onFocus={() => focusHandler("password")}
-                    onBlur={() => blurHandler("password")}
-                    name="password"
+                    onFocus={() => focusHandler(name)}
+                    onBlur={() => blurHandler(name)}
+                    name={name}
                     endAdornment={
                         <InputAdornment position="end">
                             <IconButton

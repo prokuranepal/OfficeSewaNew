@@ -117,8 +117,8 @@ const Login = () => {
                         <a className={styles.link} > Log In Your Account</a>
 
                     </Link>
-                    <UsernameInput blurHandler={blurHandler} focusHandler={focusHandler} changeHandler={changeHandler} userData={userData} focus={usernameFocus} />
-                    <PasswordInput changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={passwordFocus} />
+                    <UsernameInput name="username" blurHandler={blurHandler} focusHandler={focusHandler} changeHandler={changeHandler} userData={userData} focus={usernameFocus} />
+                    <PasswordInput name="password" changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={passwordFocus} />
 
                     <Link href="#">
                         <a className={styles.sm_link}  >Forgot password?</a>

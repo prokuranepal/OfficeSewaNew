@@ -2,7 +2,7 @@ import React from 'react'
 import { TextField, Typography } from '@material-ui/core'
 import styles from '../../styles/login.module.css'
 
-export const UsernameInput = ({ userData, changeHandler, focusHandler, ref, focus, blurHandler }) => {
+export const UsernameInput = ({ userData, changeHandler, focusHandler, ref, focus, blurHandler, name }) => {
     console.log(focus, "usernameFocus")
     return (
         <>
@@ -10,9 +10,9 @@ export const UsernameInput = ({ userData, changeHandler, focusHandler, ref, focu
                 ref={ref}
                 className={styles.input_container}
                 value={userData.formData.username.value}
-                name="username"
-                onFocus={() => focusHandler("username")}
-                onBlur={() => blurHandler("username")}
+                name={name}
+                onFocus={() => focusHandler(name)}
+                onBlur={() => blurHandler(name)}
                 onChange={changeHandler}
                 fullWidth placeholder="Username or email address"
                 type="text"
