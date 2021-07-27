@@ -1,10 +1,14 @@
 import '../styles/globals.css'
-import Login from './Login'
+import Login from '../components/Login/index'
+import SearchBar from '../components/shared/Searchbar'
 
 function MyApp({ Component, pageProps }) {
   // return <Component {...pageProps} />
   return (
-    <Login />
+    <>
+      <SearchBar />
+      <Login />
+    </>
   )
 }
 
