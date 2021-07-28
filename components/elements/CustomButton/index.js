@@ -4,7 +4,7 @@ import { colors } from '../../../theme/colors';
 const CustomButton = (props) => {
     const classes = useStyles();
     return (
-        <button className={classes.root}>
+        <button className={classes.root} style={props.style}>
             {props.title}
         </button>
     )

@@ -1,31 +1,44 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
 
-const Shipping = (props) => {
+import HomeLayout from '../../components/layouts/HomeLayout';
+import Breadcrumb from '../../components/elements/BreadCrumb';
+import HeaderText from '../../components/elements/HeaderText';
+import Shipping from '../../components/partials/Shipping';
+
+const ShippingPage = (props) => {
     const classes = useStyles();
+    const breadcrumb = [
+        {
+            text: 'Home',
+            url: '/',
+        },
+        {
+            text: 'Shopping Cart',
+            url: '/'
+        },
+        {
+            text: 'Shipping'
+        }
+    ];
     return (
-        <div className={classes.root}>
-            <Breadcrumbs aria-label="breadcrumb">
-                <Link color="inherit" href="#">
-                    Home
-                </Link>
-                <Link color="inherit" href="#">
-                    Shopping Cart
-                </Link>
-                <Typography color="textPrimary">Shipping</Typography>
-            </Breadcrumbs>
+        <HomeLayout>
+            <Breadcrumb breadcrumb={breadcrumb} />
+            <div className={classes.container}>
+                <HeaderText title={'Shipping and Billing Information'} />
+            </div>
+            <Shipping/>
+            
 
-        </div>
+        </HomeLayout>
     )
 };
 
 const useStyles = makeStyles({
-    root: {
-
-    }
+    container: {
+        marginLeft: '60px'
+    },
+    
 });
 
-export default Shipping;
+export default ShippingPage;

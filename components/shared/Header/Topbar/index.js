@@ -90,7 +90,9 @@ const Topbar = (props) => {
 
                 <div className={classes.account}>
                     <div className={classes.iconContainer}>
+                    <Link href={'/login'}>
                         Login
+                        </Link>
                         {/* <UserOutlined className={classes.icons} /> */}
                     </div>
                     {/* <div className={classes.accountLinks}>
@@ -108,9 +110,9 @@ const Topbar = (props) => {
 const useStyles = makeStyles({
     root: {
         width: '100%',
-        position: 'absolute',
-        top: 0,
-        flex: 1
+        // position: 'absolute',
+        // top: 0,
+        // flex: 1
     },
     topItem: {
         padding: '5px 20px',
