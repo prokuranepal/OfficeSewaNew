@@ -1,0 +1,645 @@
+{
+    "menuPrimary": {
+        "menu_1": [
+            {
+                "text": "Laptops and Computers",
+                "url": "/shop/categories/laptops-and-computers",
+                "slug": "laptops-and-computers",
+                "cat": 0,
+                "extraClass": "menu-item-has-children has-mega-menu",
+                "subClass": "sub-menu",
+                "mega": "true",
+                "megaContent": [
+                    {
+                        "heading": "Desktops",
+                        "megaItems": [
+                            {
+                                "text": "Dell Desktops",
+                                "slug": "dell-desktop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NTU="
+                            },
+                            {
+                                "text": "HP Desktops",
+                                "slug": "hp-desktop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NTY="
+                            },
+                            {
+                                "text": "MSI Desktops",
+                                "slug": "msi-desktop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NTc="
+                            },
+                            {
+                                "text": "Lenovo Desktops",
+                                "slug": "lenovo-desktop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NTg="
+                            },
+                            {
+                                "text": "Asus Desktops",
+                                "slug": "asus-desktop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NTk="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Laptops",
+                        "megaItems": [
+                            {
+                                "text": "Dell",
+                                "slug": "dell-laptop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjA="
+                            },
+                            {
+                                "text": "Lenovo",
+                                "slug": "lenovo-laptop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjE="
+                            },
+                            {
+                                "text": "MSI",
+                                "slug": "msi-laptop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjI="
+                            },
+                            {
+                                "text": "Asus",
+                                "slug": "asus-laptop",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjM="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Computer Accessories",
+                        "megaItems": [
+                            {
+                                "text": "Computer Casing",
+                                "slug": "computer-casing",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjQ="
+                            },
+                            {
+                                "text": "Mouse",
+                                "slug": "mouse",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjU="
+                            },
+                            {
+                                "text": "Keyboard",
+                                "slug": "keyboard",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NjY="
+                            },
+                            {
+                                "text": "Monitor",
+                                "slug": "monitor",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6Njc="
+                            },
+                            {
+                                "text": "Mousepad",
+                                "slug": "mousepad",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6Njg="
+                            },
+                            {
+                                "text": "Pendrive",
+                                "slug": "pendrive",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6Njk="
+                            },
+                            {
+                                "text": "Internal SSD",
+                                "slug": "internal-ssd",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NzA="
+                            },
+                            {
+                                "text": "External SSD",
+                                "slug": "external-ssd",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NzE="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Network Devices",
+                        "megaItems": [
+                            {
+                                "text": "Router",
+                                "slug": "router",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NzI="
+                            },
+                            {
+                                "text": "Switch",
+                                "slug": "switch",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NzM="
+                            },
+                            {
+                                "text": "Cables",
+                                "slug": "cable",
+                                "cat": "laptop_and_computer",
+                                "url": "/shop/shop_products/laptops",
+                                "id": "Q2F0ZWdvcnk6NzQ="
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Electronics",
+                "url": "/shop/categories/electronics",
+                "extraClass": "menu-item-has-children has-mega-menu",
+                "subClass": "sub-menu",
+                "slug": "electronics",
+                "cat": 1,
+                "mega": "true",
+                "megaContent": [
+                    {
+                        "heading": "Air Conditioner",
+                        "megaItems": [
+                            {
+                                "text": "Samsung",
+                                "slug": "samsung",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6NzU="
+                            },
+                            {
+                                "text": "Yasuda",
+                                "slug": "yasuda",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6NzY="
+                            },
+                            {
+                                "text": "Colors",
+                                "slug": "colors",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6Nzc="
+                            },
+                            {
+                                "text": "Panasonic",
+                                "slug": "panasonic",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6Nzg="
+                            },
+                            {
+                                "text": "Hisense",
+                                "slug": "hisense",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6Nzk="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Heater",
+                        "megaItems": [
+                            {
+                                "text": "Room Heater",
+                                "slug": "room-heater",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODA="
+                            },
+                            {
+                                "text": "Water Heater",
+                                "slug": "water-heater",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODE="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Home Appliances",
+                        "megaItems": [
+                            {
+                                "text": "Iron",
+                                "slug": "iron",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODI="
+                            },
+                            {
+                                "text": "Washing Machine",
+                                "slug": "washing-machine",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODM="
+                            },
+                            {
+                                "text": "Rice Cooker",
+                                "slug": "rice-cooker",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODQ="
+                            },
+                            {
+                                "text": "Refrigerator",
+                                "slug": "refrigerator",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODU="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Camera",
+                        "megaItems": [
+                            {
+                                "text": "CCTV Camera",
+                                "slug": "cctv-camera",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODY="
+                            },
+                            {
+                                "text": "Web Cams",
+                                "slug": "web-cam",
+                                "cat": "electronic",
+                                "url": "/shop/shop_products/electronics",
+                                "id": "Q2F0ZWdvcnk6ODc="
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Printers and Scanners",
+                "url": "/shop/categories/printers-and-scanners",
+                "slug": "printers-and-scanners",
+                "cat": 2,
+                "extraClass": "menu-item-has-children has-mega-menu",
+                "subClass": "sub-menu",
+                "mega": "true",
+                "megaContent": [
+                    {
+                        "heading": "Printers",
+                        "megaItems": [
+                            {
+                                "text": "Epson",
+                                "slug": "epson-printer",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6ODg="
+                            },
+                            {
+                                "text": "Brother",
+                                "slug": "brother-printer",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6ODk="
+                            },
+                            {
+                                "text": "Xlab",
+                                "slug": "xlab-printer",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTA="
+                            },
+                            {
+                                "text": "Samsung",
+                                "slug": "samsung-printer",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTE="
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Ink Catridges and Printer Accessories",
+                        "megaItems": [
+                            {
+                                "text": "Samsung",
+                                "slug": "samsung-printer-part",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTI="
+                            },
+                            {
+                                "text": "Epson Printer",
+                                "slug": "epson-printer-part",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTM="
+                            },
+                            {
+                                "text": "Brother Printer",
+                                "slug": "brother-printer-part",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTQ="
+                            },
+                            {
+                                "text": "Xlab Printer",
+                                "slug": "xlab-printer-part",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTU="
+                            },
+                            {
+                                "text": "HP Printer",
+                                "slug": "hp-printer-part",
+                                "cat": "printer_and_scanner",
+                                "url": "/shop/shop_products/printers",
+                                "id": "Q2F0ZWdvcnk6OTY="
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Stationery",
+                "url": "/shop/categories/stationery",
+                "slug": "stationery",
+                "cat": 3,
+                "extraClass": "menu-item-has-children",
+                "megaContent": [
+                    {
+                        "heading": "Stationery",
+                        "megaItems": [
+                            {
+                                "text": "Whiteboard",
+                                "slug": "whiteboard",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTEz"
+                            },
+                            {
+                                "text": "Notice Board",
+                                "slug": "notice-board",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE0"
+                            },
+                            {
+                                "text": "Diary",
+                                "slug": "diary",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE1"
+                            },
+                            {
+                                "text": "Calculator",
+                                "slug": "calculator",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE2"
+                            },
+                            {
+                                "text": "Photocopy Paper",
+                                "slug": "photocopy-paper",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE3"
+                            },
+                            {
+                                "text": "Binding Machine",
+                                "slug": "binding-machine",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE4"
+                            },
+                            {
+                                "text": "Punching Machine",
+                                "slug": "punching-machine",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTE5"
+                            },
+                            {
+                                "text": "Register",
+                                "slug": "register",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTIw"
+                            },
+                            {
+                                "text": "File",
+                                "slug": "file",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTIx"
+                            },
+                            {
+                                "text": "Pen, Pencil, Eraser, Sharpener",
+                                "slug": "pen,-pencil,-eraser,-sharpener",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTIy"
+                            },
+                            {
+                                "text": "Stapler Machine",
+                                "slug": "stapler-machine",
+                                "cat": "stationery",
+                                "url": "/shop/shop_products/stationery",
+                                "id": "Q2F0ZWdvcnk6MTIz"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Furnitures",
+                "url": "/shop/categories/furnitures",
+                "urlParams": "furnitures",
+                "slug": "furnitures",
+                "cat": 4,
+                "extraClass": "menu-item-has-children has-mega-menu",
+                "subClass": "sub-menu",
+                "mega": "true",
+                "megaContent": [
+                    {
+                        "heading": "Chairs & Tables",
+                        "megaItems": [
+                            {
+                                "text": "Office Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "thumb": "officeTable.jpg",
+                                "slug": "office-table",
+                                "id": "Q2F0ZWdvcnk6MzI="
+                            },
+                            {
+                                "text": "Meeting Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "meeting-table",
+                                "thumb": "meetingTable.jpg",
+                                "id": "Q2F0ZWdvcnk6MzA="
+                            },
+                            {
+                                "text": "Computer Chair",
+                                "id": "Q2F0ZWdvcnk6MjY=",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "computer-chair",
+                                "thumb": "computerChair.jpg"
+                            },
+                            {
+                                "text": "Visitor Chair",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "visitor-chair",
+                                "id": "Q2F0ZWdvcnk6Mjk=",
+                                "thumb": "visitorChair.jpg"
+                            },
+                            {
+                                "text": "Office Chair",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "office-chair",
+                                "id": "Q2F0ZWdvcnk6Mjg=",
+                                "thumb": "officeChair.jpg"
+                            },
+                            {
+                                "text": "Dining Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "thumb": "diningTable.jpg",
+                                "slug": "dining-table",
+                                "id": "Q2F0ZWdvcnk6MzE="
+                            },
+                            {
+                                "text": "Conference Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "conference-table",
+                                "thumb": "conferenceTable.jpg",
+                                "id": "Q2F0ZWdvcnk6MTA4="
+                            },
+                            {
+                                "text": "Reception Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "cat": "furniture",
+                                "slug": "reception-table",
+                                "thumb": "receptionTable.jpg",
+                                "id": "Q2F0ZWdvcnk6MTA5="
+                            },
+                            {
+                                "text": "Tea Table",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "tea-table",
+                                "cat": "furniture",
+                                "thumb": "teaTable.jpg",
+                                "id": "Q2F0ZWdvcnk6MTEw="
+                            },
+                            {
+                                "text": "Executive Chair",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "executive-chair",
+                                "id": "Q2F0ZWdvcnk6Mjc=",
+                                "thumb": "revolvingExecutiveChair.jpg"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Others",
+                        "megaItems": [
+                            {
+                                "text": "Partition/Cubicle",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "partition",
+                                "thumb": "cubicle.jpg",
+                                "id": "Q2F0ZWdvcnk6MzY="
+                            },
+                            {
+                                "text": "Wallpaper",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "wallpaper",
+                                "thumb": "partition.jpg",
+                                "id": "Q2F0ZWdvcnk6NDA="
+                            },
+                            {
+                                "text": "Cloth Hanger",
+                                "slug": "cloth-hanger",
+                                "url": "/shop/shop_products/furnitures",
+                                "thumb": "clothHanger.jpg",
+                                "id": "Q2F0ZWdvcnk6MTEx="
+                            },
+                            {
+                                "text": "Carpet",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "carpet",
+                                "thumb": "carpet.jpg",
+                                "id": "Q2F0ZWdvcnk6Mzc="
+                            },
+                            {
+                                "text": "Door Mat",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "door-mat",
+                                "thumb": "doorMat.jpg",
+                                "id": "Q2F0ZWdvcnk6MzQ="
+                            },
+                            {
+                                "text": "Vault and Safe",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "vault",
+                                "thumb": "vault.jpg",
+                                "id": "Q2F0ZWdvcnk6Mzg="
+                            },
+                            {
+                                "text": "Bar Stool",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "bar-stool",
+                                "thumb": "barStool.jpg",
+                                "id": "Q2F0ZWdvcnk6Mzk="
+                            },
+                            {
+                                "text": "Stool",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "stool",
+                                "thumb": "stool.jpg",
+                                "id": "Q2F0ZWdvcnk6Mzk="
+                            },
+                            {
+                                "text": "Daraz",
+                                "url": "/shop/shop_products/furnitures",
+                                "slug": "daraz",
+                                "thumb": "daraz.jpg",
+                                "id": "Q2F0ZWdvcnk6MzU="
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "categoryToIndex": {
+        "electronic": 0,
+        "laptop_and_computer": 1,
+        "printer_and_scanner": 2,
+        "stationery": 3,
+        "furniture": 4
+    }
+}
