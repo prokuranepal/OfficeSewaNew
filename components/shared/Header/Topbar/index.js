@@ -8,7 +8,8 @@ import MiniCart from '../MiniCart';
 import MenuDropDown from '../MenuDropDown';
 import { HeartOutlined, ShoppingCartOutlined, UserOutlined, BarChartOutlined } from '@ant-design/icons';
 // import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
-import { colors } from '../../../theme/colors';
+import Grow from '@material-ui/core/Grow';
+import { colors } from '../../../../theme/colors';
 const Topbar = (props) => {
     const [showDepartments, setShowDepartments] = useState(false);
     const [showMiniCart, setShowMiniCart] = useState(false);
@@ -48,7 +49,7 @@ const Topbar = (props) => {
         <Grid container className={classes.root}>
             <Grid item className={classes.topItem} xs={12} sm={4} md={3}>
                 <div className={showDepartments ? classes.visible : classes.invisible}>
-                    <MenuDropDown />
+                    {/* <MenuDropDown /> */}
                 </div>
                 <div className={showDepartments ? classes.invisible : classes.visible}>
                     <img
@@ -68,27 +69,36 @@ const Topbar = (props) => {
                         <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                     </div>
                 </Link>
-                <Link href={'#'}>
+                <Link href={'/shipping'}>
                     <div className={classes.iconContainer}>
                         <HeartOutlined className={classes.icons} />
                         <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                     </div>
                 </Link>
                 {/* <Link href={'#'}> */}
-                <div className={classes.iconContainer}>
-                    <ShoppingCartOutlined className={classes.icons} onMouseOver={showMiniCartFunc} onMouseOut={hideMiniCartFunc} />
+                <div className={classes.iconContainer} onMouseOver={showMiniCartFunc} onMouseLeave={hideMiniCartFunc}>
+                    <ShoppingCartOutlined className={classes.icons} />
                     <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
+                    {/* <Grow in={showMiniCart?true:false} style={{ transformOrigin: '0 0 0' }}
+                        {...(showMiniCart ? { timeout: 1000 } : {})}> */}
+                        <div className={showMiniCart?classes.visible:classes.invisible}>
+                        <MiniCart showMiniCart={showMiniCart} />
+                        </div>
+                    {/* </Grow> */}
                 </div>
                 {/* </Link> */}
-                <MiniCart showMiniCart={showMiniCart} />
+
                 <div className={classes.account}>
                     <div className={classes.iconContainer}>
-                        <UserOutlined className={classes.icons} />
+                    <Link href={'/login'}>
+                        Login
+                        </Link>
+                        {/* <UserOutlined className={classes.icons} /> */}
                     </div>
-                    <div className={classes.accountLinks}>
+                    {/* <div className={classes.accountLinks}>
                         <div>Login</div>
                         <div>Register</div>
-                    </div>
+                    </div> */}
                 </div>
 
             </Grid>
@@ -100,9 +110,9 @@ const Topbar = (props) => {
 const useStyles = makeStyles({
     root: {
         width: '100%',
-        position: 'absolute',
-        top: 0,
-        flex: 1
+        // position: 'absolute',
+        // top: 0,
+        // flex: 1
     },
     topItem: {
         padding: '5px 20px',
@@ -136,11 +146,15 @@ const useStyles = makeStyles({
             color: colors.primary
         }
     },
-    visible: {
-        display: 'block'
-    },
     invisible: {
-        display: 'none'
+
+        // display: 'block'
+        visibility: 'hidden',
+        opacity: 0
+    },
+    visible: {
+        visibility: 'visible',
+        opacity: 1
     },
     itemNumber: {
         display: 'flex',
@@ -170,8 +184,10 @@ const useStyles = makeStyles({
         position: 'relative',
         width: '30px',
         height: '42px',
-        transition: 'all 0.4s ease',
-
+        transition: 'all 2s ease',
+    },
+    login: {
+        
     }
 }, { name: "MuiComponent" });
 

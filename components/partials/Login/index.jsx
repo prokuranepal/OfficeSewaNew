@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Typography, Button, Box, Grid } from '@material-ui/core';
 import Link from 'next/link'
 import FacebookIcon from '@material-ui/icons/Facebook';
-import styles from '../../styles/login.module.css'
-import UsernameInput from './UsernameInput'
-import PasswordInput from './PasswordInput';
+import styles from '../../../styles/login.module.css'
+import UsernameInput from './modules/UsernameInput'
+import PasswordInput from './modules/PasswordInput';
 // const passwordRegex = new RegExp('^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$');
 const passwordRegex = new RegExp('^(?=.*?[A-Za-z])(?=.*?[0-9]).{6,}$');
 
@@ -133,13 +133,13 @@ const Login = () => {
                     </Link>
                     <Typography className={styles.connect_text} variant="h5">Connect With:</Typography>
                     <Grid container spacing={6} className={styles.social_container}>
-                        <Grid items xs={12} md={6} >
+                        <Grid item xs={12} md={6} >
                             <Button variant="contained" className={`${styles["social_button"]}  ${styles["primary"]}`} color="primary" >
                                 <FacebookIcon />
 
                             </Button>
                         </Grid>
-                        <Grid items xs={12} md={6}>
+                        <Grid item xs={12} md={6}>
                             <Button variant="contained" className={`${styles["social_button"]}  ${styles["secondary"]}`} color="primary" >
                                 <FacebookIcon />
 
