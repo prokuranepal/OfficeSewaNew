@@ -3,11 +3,13 @@ import PrimaryButton from '../global/PrimaryButton'
 import { Typography, Button, Box, Grid } from '@material-ui/core';
 import Link from 'next/link'
 import FacebookIcon from '@material-ui/icons/Facebook';
+import styles from '../../styles/register.module.css'
 import UsernameInput from '../global/UsernameInput'
 import PasswordInput from '../global/PasswordInput';
 import { emailRegex } from '../utils/regex';
-import { makeStyles } from "@material-ui/styles"
+import { passwordRegex } from '../utils/regex';
 import { HeaderText } from '../HeaderText';
+import { makeStyles } from '@material-ui/styles';
 import { colors } from '../utils/colors';
 const useStyles = makeStyles({
     mainContainer: {
@@ -18,7 +20,7 @@ const useStyles = makeStyles({
         alignItems: "center",
         backgroundColor: "#F1F1F1",
     },
-    login: {
+    register: {
         width: "500px",
         minHeight: "400px",
         padding: "4rem",
@@ -51,7 +53,7 @@ const useStyles = makeStyles({
     }
 })
 
-const Login = () => {
+export const Register = () => {
     const classes = useStyles()
     const [emailFocus, setEmailFocus] = useState(false)
     const [passwordFocus, setPasswordFocus] = useState(false)
@@ -59,8 +61,8 @@ const Login = () => {
         formData: {
             email: {
                 elementConfig: {
-                    type: "email",
-                    placeholder: "Username or email address",
+                    type: "text",
+                    placeholder: "Email Address",
                     name: "email"
                 },
                 value: '',
@@ -83,7 +85,7 @@ const Login = () => {
                 showPassword: false,
                 validity: {
                     required: true,
-                    // regex: passwordRegex
+                    regex: passwordRegex
                 }
             }
         }
@@ -94,13 +96,13 @@ const Login = () => {
         if (rules.required) {
             isValid = values.trim() !== "" && isValid
         }
-        if (rules.minLength) {
-            isValid = values.length >= 3 && isValid
-        }
+
         if (rules.regex) {
             isValid = rules.regex.test(values) && isValid
+            console.log(isValid, "valid")
 
         }
+
 
         return isValid;
     }
@@ -108,6 +110,7 @@ const Login = () => {
         // const newState = { ...userData, formData: { ...userData.formData, password: { ...userData.formData.password, showPassword: userData.formData.password.showPassword } } }
         // setUserData(newState)
         setUserData(pre => {
+            ["secondary"]
             return { ...pre, formData: { ...pre.formData, [name]: { ...pre.formData[name], showPassword: !pre.formData[name].showPassword } } }
         })
     }
@@ -141,13 +144,13 @@ const Login = () => {
             setPasswordFocus(false)
     }
     const submitHandler = (e) => {
-        // setEmailFocus(false);
-        // setPasswordFocus(false);
+        setEmailFocus(false);
+        setPasswordFocus(false);
         setUserData(pre => {
             return { ...pre, formData: { ...pre.formData, email: { ...pre.formData.email, touched: true }, password: { ...pre.formData.password, touched: true } } }
         })
-        console.log(userData, "submitState")
-        console.log("hello")
+        console.log(userData, "submitdata")
+
         e.preventDefault()
     }
     const formDataArray = [];
@@ -161,22 +164,22 @@ const Login = () => {
 
     console.log(disable, "isDisable")
     console.log(userData, "newState")
-
     return (
         <>
             <form onSubmit={submitHandler}>
                 <div className={classes.mainContainer}>
-                    <div className={classes.login}>
-                        <HeaderText>Log In Your Account</HeaderText>
+                    <div className={classes.register}>
+                        <HeaderText>Register an Account</HeaderText>
                         <UsernameInput name="email" blurHandler={blurHandler} focusHandler={focusHandler} changeHandler={changeHandler} userData={userData} focus={emailFocus} />
                         <PasswordInput name="password" changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={passwordFocus} />
 
-                        {/* <Button fullWidth className={classes["primary_button"]} variant="contained" >
-                        Login
-                    </Button> */}
-                        <PrimaryButton >Login</PrimaryButton>
+
+                        {/* <Button fullWidth className={styles["primary_button"]} variant="contained" >
+                Login
+            </Button> */}
+                        <PrimaryButton submitHanadler={submitHandler}>Register</PrimaryButton>
                         <Link href="#">
-                            <a className={classes.link}  >New Member? Sign_up_Here</a>
+                            <a className={classes.link}  >Already a Member? Login Here</a>
 
                         </Link>
                         <Typography className={classes.connectText} variant="h5">Connect With:</Typography>
@@ -188,7 +191,7 @@ const Login = () => {
                                 </Button>
                             </Grid>
                             <Grid items xs={12} md={6}>
-                                <Button variant="contained" className={`${classes.socialButton}  ${classes.secondary}`} color="primary" >
+                                <Button variant="contained" className={`${classes.socialButton}  ${classes.secondary}`}  >
                                     <FacebookIcon />
 
                                 </Button>
@@ -199,8 +202,6 @@ const Login = () => {
                 </div>
             </form>
         </>
-
     )
 }
-
-export default Login;
+export default Register;

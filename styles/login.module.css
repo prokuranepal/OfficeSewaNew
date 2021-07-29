@@ -53,6 +53,8 @@ transition: all 0.2s ease-in-out ;
     display: flex !important;
 }
 .link{
+    display: block;
+    margin: 1rem 0;
     font-size: 18px;
     color: var(--primary_color);
 }

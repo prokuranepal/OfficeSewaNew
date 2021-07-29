@@ -9,15 +9,16 @@ export const UsernameInput = ({ userData, changeHandler, focusHandler, ref, focu
             <TextField
                 ref={ref}
                 className={styles.input_container}
-                value={userData.formData.username.value}
+                value={userData.formData[name].value}
                 name={name}
                 onFocus={() => focusHandler(name)}
                 onBlur={() => blurHandler(name)}
                 onChange={changeHandler}
-                fullWidth placeholder="Username or email address"
-                type="text"
+                fullWidth
+                placeholder={userData.formData[name].elementConfig.placeholder}
+                type={userData.formData[name].elementConfig.type}
                 variant="outlined" />
-            {(!focus && userData.formData.username.touched && !userData.formData.username.valid && userData.formData.username.value.length > 0) && <Typography className={styles.warning} variant="span">Username should be more than 3 characters</Typography>}
+            {(!focus && userData.formData[name].touched && !userData.formData[name].valid) && <Typography className={styles.warning} variant="span">{userData.formData[name].value.length > 0 ? "Email Address is invalid" : "Email Address Cannot be empty"}</Typography>}
 
         </>
     )
