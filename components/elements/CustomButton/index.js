@@ -1,12 +1,16 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { colors } from '../../../theme/colors';
+import Link from '@material-ui/core/Link';
+import LinkButton from '../LinkButton';
 const CustomButton = (props) => {
     const classes = useStyles();
     return (
+        <Link href={props.url}>
         <button className={classes.root} style={props.style}>
             {props.title}
         </button>
+        </Link>
     )
 };
 

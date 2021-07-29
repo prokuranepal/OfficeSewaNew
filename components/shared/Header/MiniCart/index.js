@@ -16,8 +16,8 @@ const MiniCart = (props) => {
                     </div>
                     <div className={classes.buttonContainer}>
 
-                        <CustomButton title={'View Cart'} />
-                        <CustomButton title={'Checout'} />
+                        <CustomButton title={'View Cart'} url={'/shoppingcart'}/>
+                        <CustomButton title={'Checout'} url={'/shipping'}/>
                     </div>
                 </div>
             </div>
@@ -29,8 +29,8 @@ const useStyles = makeStyles({
     root: {
         position: 'absolute',
         minWidth: '300px',
-        right: '-20px',
-        top: '22px',
+        right: '20px',
+        top: '26px',
         // zIndex: 30,
         // padding: '10px',
         transform: 'translate(0 ,20px)',

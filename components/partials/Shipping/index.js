@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
-import Link from '@material-ui/core/Link';
+
 import LinkButton from '../../elements/LinkButton';
 import ShippingInfo from './modules/ShippingInfo';
 import { colors } from '../../../theme/colors';
@@ -63,7 +63,7 @@ const Shipping = (props) => {
                             </div>
                         </div>
                         <div className={classes.buttonContainer}>
-                            <CustomButton title={'Proceed To Checout'} style={{width: '100%'}}/>
+                            <CustomButton title={'Proceed To Checkout'} style={{width: '100%'}} url={'/checkout'}/>
                         </div>
                     </div>
                 </Grid>
