@@ -1,19 +1,16 @@
 import '../styles/globals.css'
-import Login from '../components/Login/index'
+import Login from '../pages/login/index'
 import SearchBar from '../components/shared/Searchbar'
-import ChangePassword from '../components/ChangePassword'
-import Register from '../components/Register'
-import ForgotPassword from '../components/ForgotPassword'
+import ChangePassword from '../pages/ChangePassword'
+import Register from '../pages/Register'
 
 function MyApp({ Component, pageProps }) {
-  // return <Component {...pageProps} />
+  return <Component {...pageProps} />
   return (
     <>
       {/* <SearchBar /> */}
-      {/* <Login /> */}
-      {/* <Register /> */}
-      <ForgotPassword />
-      {/* <ChangePassword /> */}
+      {/* <Login />
+      <ChangePassword /> */}
     </>
   )
 }
