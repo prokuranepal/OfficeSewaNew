@@ -1,10 +1,12 @@
 
 .navbarContainer{
-    position: absolute;
+    /* position: absolute; */
     /* top: 0; */
-    left: 0;
+    /* left: 0; */
+    width: "100vw";
+
     background-color: #1961a5;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     padding-left:50px;
     /* display-direction : row; */
@@ -128,6 +130,7 @@
     min-width: 240px;
     visibility: hidden;
     display:flex;
+    z-index:1000;
     flex-flow: row nowrap;
     /* padding: 15px 30px 10px; */
     background-color: #fff;
@@ -138,7 +141,7 @@
     border: 1px solid #ccc;
     transition: all 0.25s ease;
     border-radius: 3px;
-    padding-right:15px;
+    padding:20px 15px 0px 25px ;
     /* padding: 10px 0px 10px 15px; */
 }
 
@@ -199,6 +202,7 @@
     font-size: 14px;
     width:100%;
     flex-flow: row nowrap;
+    font-weight: bold;
 }
 
 
