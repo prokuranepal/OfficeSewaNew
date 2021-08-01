@@ -2,24 +2,65 @@ import Head from '../components/layouts/modules/Head'
 import Image from 'next/image'
 // import styles from '../styles/Home.module.css';
 import styles from '../styles/Navbar.module.css';
+import MegaMenu from '../components/menu/MegaMenu';
 import MenuCat from '../components/menu/MenuCat';
+import BreadCrumb from '../components/BreadCrumb/BreadCrumb';
+
 export default function Home() {
-  let menuCat=[{menu:'Category1', subMenu:[{menu:'Sub1'},{menu:'Sub2'},{menu:'Sub3'},{menu:'Sub4'}]},
-  {menu:'Category2', subMenu:[{menu:'Sub11'},{menu:'Sub21'},{menu:'Sub31'},{menu:'Sub41'}]},
-  {menu:'Category3', subMenu:[{menu:'Sub12'},{menu:'Sub22'},{menu:'Sub32'},{menu:'Sub42'}]},
-  {menu:'Category4', subMenu:[{menu:'Sub13'},{menu:'Sub23'},{menu:'Sub33'},{menu:'Sub43'}]},
-  {menu:'Category5', subMenu:[{menu:'Sub14'},{menu:'Sub24'},{menu:'Sub34'},{menu:'Sub44'}]}]
+  let menuCat=[{menu:'Furnitures', subMenu:[
+    {menu:'Chairs and Tables', subMenu:[{menu:'Computer Chair'},{menu:'Office Chair'},{menu:'Executive Chair'},{menu:'Visitor Chair'}, ,{menu:'Meeting Table'},{menu:'Conference Table'},,{menu:'Dining Table'},{menu:'Reception Table'},{menu:'Tea Table'}]},
+    {menu:'Others', subMenu:[{menu:'Door Mat'},{menu:'Daraz'},{menu:'Partition'},{menu:'Carpet'},{menu:'Vault'},{menu:'Stool'},{menu:'Wallpaper'},{menu:'Cloth Hanger'}]}]},
+  {menu:'Electronics', 
+   subMenu:[{menu:'Air Conditioner', subMenu:[{menu:'Samsung'},{menu:'Colors'},{menu:'Yasuda'},{menu:'Hisense'},{menu:'Panasonic'}, {menu:'LG Air Conditioner'}]},
+   {menu:'Heater', subMenu:[{menu:'Room Heater'},{menu:'Water Heater'}]},
+   {menu:'Home Appliances', subMenu:[{menu:'Washing Machine'},{menu:'Iron'},{menu:'Refrigerator'},{menu:'Rice Cooker'}]},
+   {menu:'Camera', subMenu:[{menu:'CCTV Camera'},{menu:'Web Cams'}]}]},
+   {menu:'Laptops and Computer', 
+   subMenu:[{menu:'Desktops', subMenu:[{menu:'Dell Desktops'},{menu:'HP Desktops'},{menu:'MSI Desktops'},{menu:'Lenovo'},{menu:'Asus Desktops'}]},
+   {menu:'Laptops', subMenu:[{menu:'Dell Laptops'},{menu:'Lenovo Laptops'},{menu:'MSI Laptops'},{menu:'Asus Laptops'}]},
+   {menu:'Computer Accessories', subMenu:[{menu:'Keyboard'},{menu:'Computer Casing'},{menu:'Monitor'},{menu:'Mouse'},{menu:'Mousepad'},{menu:'Pendrive'},{menu:'External SSD'},{menu:'Internal SSD'}]},
+   {menu:'Network Devices', subMenu:[{menu:'Router'},{menu:'Cables'},{menu:'Switch'}]}]},
+   {menu:'Printers and Scanners', 
+   subMenu:[{menu:'Printers', subMenu:[{menu:'Epson Printer'},{menu:'Brother Printer'},{menu:'Xlab Printer'},{menu:'Samsung Printer'}]},
+   {menu:'Ink Catridges and Printer Accessories', subMenu:[{menu:' Epson Inks and Catridges'},{menu:'Samsung Inks and Catridges'},{menu:'Brother Inks and Catridges'},{menu:'HP Inks and Catridges'},{menu:'Xlab Inks and Catridges'}]},
+   ]},
+   {menu:'Stationery', 
+   subMenu:[{menu:'Stationery', subMenu:[{menu:'Notice Board'},{menu:'Whiteboard'},{menu:'Calculator'},{menu:'Diary'},
+   ,{menu:'Punching Machine'},{menu:'Photocopy Paper'},{menu:'Pen, Pecil, Eraser, Sharpener'},{menu:'Binding Machine'},{menu:'Register'},{menu:'File'},{menu:'Stapler'}
+  ]}]}
+]
+const breadCrumb = [
+  {
+      text: 'Home',
+      url: '/',
+  },
+  {
+      text: 'My Account',
+  },
+];
+
+  
   return (
     <>
       <Head/>
       <div>
         Header Component
       </div>
-      <div className={styles.navbarContainer}>
-         {menuCat.map(item=>
+      {/* <div className={styles.navbarContainer}>
+      {menuCat.map(item=>
           <MenuCat item={item}/>
          )}
-      </div> 
+      </div>  */}
+      
+       <div className={styles.navbarContainer}>
+      {menuCat.map(item=>
+          <MegaMenu item={item}/>
+          
+         )}
+         </div>
+         <div></div>
+         {/* <BreadCrumb breadcrumb={breadCrumb}/> */}
+
     </>
   )
 }
