@@ -7,25 +7,38 @@ import PasswordInput from '../../elements/PasswordInput/PasswordInput';
 import { emailRegex } from '../../utils/regex';
 import { passwordRegex } from '../../utils/regex';
 import { HeaderText } from '../../HeaderText';
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import { colors } from '../../utils/colors';
 import { FaGooglePlusG } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
+import { FcGoogle } from 'react-icons/fc'
+import { SiFacebook } from 'react-icons/si'
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles(theme => ({
     mainContainer: {
         height: "90vh",
         width: "100vw",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "flex-start",
         backgroundColor: "#F1F1F1",
+        paddingTop: "40px"
     },
     register: {
         width: "500px",
         minHeight: "400px",
         padding: "4rem",
         backgroundColor: "#fff",
+        maxWidth: "100%"
+    },
+    secondaryText: {
+        paddingTop: "5px",
+        fontSize: "18px",
+        lineHeight: "21px",
+        fontWeight: "400",
+        color: '#000000',
+        paddingBottom: "10px"
     },
     link: {
         fontSize: "14px",
@@ -34,32 +47,94 @@ const useStyles = makeStyles({
         margin: "0.6rem 0",
         display: "inline-block",
     },
+    line: {
+        margin: "2.4rem 0",
+        height: "1px",
+        backgroundColor: "#A1A1A1",
+
+    },
     socialContainer: {
-        margin: "0 auto"
+        margin: "0 auto",
+        width: "100%"
     },
     socialButton: {
-        width: "90%",
+        width: "100%",
+        height: "100%",
         padding: "2rem 0",
         color: "#fff",
-        borderRadius: "0"
+        borderRadius: '0',
+        boxShadow: "none",
     },
-    primary: {
-        background: colors.primaryColor
+    primaryButtonContainer: {
+        width: "40%",
+        height: "60px",
+        border: "1px solid #C4C4C4",
+        [theme.breakpoints.up('md')]: {
+            // paddingRight: "1rem"
+            maxWidth: "46%",
+            marginRight: "10px"
+        }
     },
-    secondary: {
-        background: colors.secondaryColor
+    secondaryButtonContainer: {
+        border: "1px solid #C4C4C4",
+        height: "60px",
+        [theme.breakpoints.up('md')]: {
+            // paddingLeft: "1rem"
+            maxWidth: "46%",
+            marginLeft: "10px"
+        }
     },
-    connectText: {
-        margin: "3rem 0",
-        color: "gray"
+    options: {
+        fontSize: "16px",
+        lineHeight: "18px",
+        color: "#000000",
+        margin: "1rem 0",
+
+    },
+
+
+    primaryButton: {
+        background: "#fff"
+
+    },
+    secondaryButton: {
+        background: "#fff"
+
+    },
+    member: {
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "18px",
+        color: "#000000",
+        paddingTop: "2rem"
+    },
+    loginLink: {
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "18px",
+        color: colors.primaryColor
     },
     facebook: {
-        fontSize: "20px"
+        display: "inline-block",
+        fontSize: "24px",
+        color: colors.primaryColor,
+        marginRight: "10px"
     },
     google: {
-        fontSize: "24px"
-    }
-})
+        fontSize: "24px",
+        marginRight: "10px"
+
+    },
+    optionsText: {
+        fontSize: "18px",
+        lineHeight: "21px",
+        fontWeight: "500",
+        color: "#000000",
+        textTransform: "capitalize"
+
+    },
+
+}))
 
 export const Register = () => {
     const classes = useStyles()
@@ -177,7 +252,9 @@ export const Register = () => {
             <form onSubmit={submitHandler}>
                 <div className={classes.mainContainer}>
                     <div className={classes.register}>
-                        <HeaderText>Register an Account</HeaderText>
+                        <HeaderText>Welcome to Office Sewa</HeaderText>
+                        <Typography variant="h4" className={classes.secondaryText}>Register an account here</Typography>
+
                         <UsernameInput name="email" blurHandler={blurHandler} focusHandler={focusHandler} changeHandler={changeHandler} userData={userData} focus={emailFocus} />
                         <PasswordInput name="password" changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={passwordFocus} />
 
@@ -186,23 +263,27 @@ export const Register = () => {
                 Login
             </Button> */}
                         <PrimaryButton >Register</PrimaryButton>
-                        <Link href="#">
-                            <a className={classes.link}  >Already a Member? Login Here</a>
+                        <Typography variant="h6" className={classes.member}>Already a member?
+                            <Link href="#">
+                                <a className={classes.loginLink}  > Login here.</a>
+                            </Link>
+                        </Typography>
+                        <div className={classes.line}></div>
 
-                        </Link>
-                        <Typography className={classes.connectText} variant="h5">Connect With:</Typography>
+                        <Typography className={classes.options} variant="h5">Or, register with:</Typography>
                         <Grid container spacing={6} className={classes.socialContainer}>
-                            <Grid items xs={12} md={6} >
-                                <Button variant="contained" className={`${classes.socialButton}  ${classes.primary}`}  >
-                                    <FaFacebookF className={`${classes.icon} ${classes.facebook}`} />
+                            <Grid items xs={12} md={6} className={classes.primaryButtonContainer} >
+                                <Button variant="contained" className={`${classes.socialButton}  ${classes.primaryButton}`}  >
+                                    <SiFacebook className={`${classes.icon} ${classes.facebook}`} />
+                                    <Typography variant="span" className={classes.optionsText}>Facebook</Typography>
                                 </Button>
                             </Grid>
-                            <Grid items xs={12} md={6}>
-                                <Button variant="contained" className={`${classes.socialButton}  ${classes.secondary}`}  >
-                                    <FaGooglePlusG className={`${classes.icon} ${classes.google}`} />
+                            <Grid items xs={12} md={6} className={classes.secondaryButtonContainer}>
+                                <Button variant="contained" className={`${classes.socialButton}  ${classes.secondaryButton}`}  >
+                                    <FcGoogle className={`${classes.icon} ${classes.google}`} />
+                                    <Typography variant="span" className={classes.optionsText}>Google</Typography>
                                 </Button>
                             </Grid>
-
                         </Grid>
                     </div>
                 </div>

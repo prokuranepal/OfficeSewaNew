@@ -8,16 +8,20 @@ import { makeStyles } from '@material-ui/styles'
 import { colors } from '../../utils/colors'
 const useStyles = makeStyles({
     changePassword: {
-        width: "90vw",
+        width: "100vw",
         minHeight: "60vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#fff"
+        background: "#f1f1f1",
+        padding: "4rem"
     },
     container: {
         width: "500px",
-        minHeight: "400px"
+        minHeight: "400px",
+        maxWidth: "100%",
+        background: "#fff",
+        padding: "4rem"
     },
     link: {
         display: "inline-block",

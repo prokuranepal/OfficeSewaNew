@@ -44,14 +44,26 @@ const useStyles = makeStyles(theme => ({
     footerTitle: {
         color: colors.primaryColor,
         fontSize: "16px",
-        fontWeight: "bold",
-        letterSpacing: "1px",
-        margin: "10px 0"
+        fontWeight: "600",
+        margin: "10px 0",
+        lineHeight: "18px"
+
+    },
+    findText: {
+        color: colors.primaryColor,
+        display: "block",
+        fontSize: "16px",
+        fontWeight: "600",
+        margin: "20px 0",
+        lineHeight: "18px",
+        // margin: "10px 0"
     },
     bodyText: {
         color: colors.textColor,
         margin: "10px 0",
-        fontSize: "14px"
+        fontSize: "14px",
+        fontWeight: "400",
+        lineHeight: "16px"
     },
     number: {
         color: colors.primaryColor,
@@ -66,6 +78,8 @@ const useStyles = makeStyles(theme => ({
             margin: "5px 0",
             display: 'inline-block',
             color: colors.textColor,
+            fontSize: "14px",
+            lineHeight: "16px"
         },
         // color: colors.textColor,
     },
@@ -73,7 +87,7 @@ const useStyles = makeStyles(theme => ({
         color: "red"
     },
     icons: {
-        marginTop: "40px"
+        marginTop: "10px"
     },
     facebookIcon: {
         fontSize: "24px",
@@ -102,11 +116,16 @@ const Footer = () => {
         <div className={classes.mainContainer}>
             <div className={classes.footerContainer}>
                 <div className={classes.contactContainer}>
+
                     <Typography variant="h6" className={classes.footerTitle}>Contact us</Typography>
-                    <Typography variant="h6" className={classes.bodyText}>Call us 24/7</Typography>
-                    <Typography variant="h3" className={classes.number}>01 456789</Typography>
-                    <Typography variant="body1" className={classes.bodyText}>Kandevatasthan, Kupondole, Lalitpur, Nepal <br></br>contact@officesewa.com</Typography>
+                    <Typography variant="h6" className={classes.bodyText}>+9779807841563</Typography>
+                    <Typography variant="h6" className={classes.bodyText}>contact@officesewa.com</Typography>
+                    {/* <Typography variant="h3" className={classes.number}>01 456789</Typography> */}
+                    <Typography variant="body1" className={classes.bodyText}>Kandevatasthan, Kupondole, Lalitpur</Typography>
+
                     <div className={classes.icons}>
+                        <Typography variant="h6" className={classes.findText}>Find Us At</Typography>
+
                         <FaFacebookF className={classes.facebookIcon} />
                         <TiSocialTwitter className={classes.twitterIcon} />
                         <FaGooglePlusG className={classes.googleIcon} />

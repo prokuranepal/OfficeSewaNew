@@ -10,14 +10,16 @@ const useStyles = makeStyles({
         width: "100vw",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "flex-start",
         backgroundColor: "#F1F1F1",
+        paddingTop: "40px"
     },
     forgotPassword: {
         width: "500px",
         minHeight: "400px",
         padding: "4rem",
         backgroundColor: "#fff",
+        maxWidth: "100%"
     }
 })
 const ForgotPassword = () => {
