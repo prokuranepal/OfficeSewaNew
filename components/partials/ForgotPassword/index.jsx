@@ -6,7 +6,7 @@ import { emailRegex } from '../../utils/regex';
 import PrimaryButton from '../../global/PrimaryButton';
 const useStyles = makeStyles({
     mainContainer: {
-        height: "90vh",
+        minHeight: "20vh",
         width: "100vw",
         display: "flex",
         justifyContent: "center",
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
     forgotPassword: {
         width: "500px",
-        minHeight: "400px",
+        minHeight: "200px",
         padding: "4rem",
         backgroundColor: "#fff",
         maxWidth: "100%"

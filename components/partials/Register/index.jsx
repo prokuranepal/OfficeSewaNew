@@ -17,13 +17,13 @@ import { SiFacebook } from 'react-icons/si'
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        height: "90vh",
+        height: "60vh",
         width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
         backgroundColor: "#F1F1F1",
-        paddingTop: "40px"
+        paddingTop: "0px"
     },
     register: {
         width: "500px",
@@ -264,7 +264,7 @@ export const Register = () => {
             </Button> */}
                         <PrimaryButton >Register</PrimaryButton>
                         <Typography variant="h6" className={classes.member}>Already a member?
-                            <Link href="#">
+                            <Link href="/login">
                                 <a className={classes.loginLink}  > Login here.</a>
                             </Link>
                         </Typography>

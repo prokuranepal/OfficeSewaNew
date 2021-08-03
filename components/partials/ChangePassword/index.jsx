@@ -6,19 +6,20 @@ import PrimaryButton from '../../global/PrimaryButton'
 import { passwordRegex } from '../../utils/regex'
 import { makeStyles } from '@material-ui/styles'
 import { colors } from '../../utils/colors'
+import { HeaderText } from '../../HeaderText'
 const useStyles = makeStyles({
     changePassword: {
         width: "100vw",
         minHeight: "60vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "flex-start",
         background: "#f1f1f1",
         padding: "4rem"
     },
     container: {
         width: "500px",
-        minHeight: "400px",
+        minHeight: "300px",
         maxWidth: "100%",
         background: "#fff",
         padding: "4rem"
@@ -154,10 +155,8 @@ export const ChangePassword = () => {
         <form onSubmit={submitHandler}>
             <div className={classes.changePassword} >
                 <div className={classes.container}>
-                    <Link href="#">
-                        <a className={classes.link} > Set New Password</a>
+                    <HeaderText>Set New Password</HeaderText>
 
-                    </Link>
                     <PasswordInput name="password1" changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={password1Focus} />
                     <PasswordInput name="password2" changeHandler={changeHandler} clickHandler={clickHandler} userData={userData} focusHandler={focusHandler} blurHandler={blurHandler} focus={password2Focus} />
                     <PrimaryButton swubmitHandler={submitHandler}>Change Password</PrimaryButton>

@@ -7,7 +7,6 @@ import ChangePasswordPage from '../pages/ChangePassword';
 import Login from '../pages/login/index'
 import Register from '../pages/Register'
 import ForgotPassword from '../pages/ForgotPassword/';
-import Footer from '../components/global/Footer/index.jsx';
 
 export default function Home() {
   return (
@@ -15,9 +14,8 @@ export default function Home() {
       {/* <Topbar /> */}
       {/* <Register /> */}
       {/* <ForgotPassword /> */}
-      <Footer />
       {/* <Login /> */}
-      {/* <ChangePassword /> */}
+      <ChangePassword />
       {/* <p className="header">hello</p> */}
     </div >
   )

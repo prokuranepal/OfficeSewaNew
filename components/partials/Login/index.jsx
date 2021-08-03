@@ -16,11 +16,11 @@ import { SubHeaderText } from '../../../components/HeaderText/index';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        height: "90vh",
+        height: "60vh",
         width: "100vw",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "flex-start",
         backgroundColor: "#F1F1F1",
     },
     login: {
@@ -274,13 +274,13 @@ const Login = () => {
                         Login
                     </Button> */}
                         <div className={classes.linkContainer}>
-                            <Link href="#">
+                            <Link href="/ForgotPassword">
                                 <a className={classes.forgotLink}  >Forgot Password?</a>
                             </Link>
                         </div>
                         <PrimaryButton >Login</PrimaryButton>
                         <Typography variant="h6" className={classes.member}>New Member?
-                            <Link href="#">
+                            <Link href="/Register">
                                 <a className={classes.memberLink}  > Create an account</a>
                             </Link>
                         </Typography>
@@ -290,7 +290,7 @@ const Login = () => {
                             <Grid items xs={12} md={6} className={classes.primaryButtonContainer} >
                                 <Button variant="contained" className={`${classes.socialButton}  ${classes.primaryButton}`}  >
                                     <SiFacebook className={`${classes.icon} ${classes.facebook}`} />
-                                    <Typography variant="span" className={classes.loginOptionsText}>Facebook</Typography>
+                                    <Typography variant="span" className={classes.optionsText}>Facebook</Typography>
                                 </Button>
                             </Grid>
                             <Grid items xs={12} md={6} className={classes.secondaryButtonContainer}>
