@@ -57,13 +57,12 @@ const breadCrumb = [
          )}
       </div>  */}
       
-       <div className={styles.navbarContainer}>
-      {menuCat.map(item=>
-          <MegaMenu item={item}/>
+       
+     
+          <MegaMenu menuCat={menuCat}/>
           
-         )}
-         </div>
-         <div></div>
+      
+
          <BreadCrumb breadcrumb={breadCrumb}/>
       <Footer/>
     </div>
