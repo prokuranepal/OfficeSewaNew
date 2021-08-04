@@ -16,11 +16,6 @@ const ProductOnCart = (props) => {
                 <Link href="/product/[pid]" as={`/product/`}>
                     <a className={classes.title}>{'Epson Printer'}</a>
                 </Link>
-                <p>
-                    <small>
-                        Nrs{2000} x {1}
-                    </small>
-                </p>
             </div>
         </div>
     )
@@ -29,15 +24,19 @@ const ProductOnCart = (props) => {
 const useStyles = makeStyles({
     root: {
         display: 'flex',
-        flexFlow: 'row nowrap',
-        margin: '10px 0px',
+        // flexFlow: 'row nowrap',
+        margin: '0px 0px 20px',
         flexDirection: 'row',
-        alignItems: 'center'
-        // padding: '5px 10px'
+        alignItems: 'center',
+        padding: '10px 0px'
     },
     content: {
         position: 'relative',
-        padding: '10px'
+        padding: '10px',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+
     },
     image: {
         // height: '100px',
@@ -49,7 +48,7 @@ const useStyles = makeStyles({
         padding: '0 0 5px',
         fontSize: '14px',
         lineHeight: '1.2em',
-        color: '#06c',
+        color: colors.primary,
         // --max-lines: 2;
         // max-height: calc(1.2em * var(--max-lines));
         overflow: 'hidden',

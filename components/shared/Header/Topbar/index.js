@@ -70,16 +70,16 @@ const Topbar = (props) => {
                             <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                         </div>
                     </Link>
-                    <Link href={'/shipping'}>
+                    <Link href={'#'}>
                         <div className={classes.iconContainer}>
                             <HeartOutlined className={classes.icons} />
                             <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                         </div>
                     </Link>
 
-                    <div onMouseOver={showMiniCartFunc} onMouseLeave={hideMiniCartFunc}>
-                        <Link href={'/shoppingcart'}>
-                            <div className={classes.iconContainer}>
+                    <div className={classes.iconContainer} onMouseOver={showMiniCartFunc} onMouseLeave={hideMiniCartFunc}>
+                        <Link href={'#'}>
+                            <div >
                                 <ShoppingCartOutlined className={classes.icons} />
                                 <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                             </div>
