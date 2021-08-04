@@ -1,0 +1,108 @@
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+    }
+    .register_container{
+        width:500px;
+        min-height: 400px;
+     padding: 4rem;
+     background-color: #fff;
+    }
+    .login_text{
+        color: var(--primary_color);
+        padding: 1rem;
+    }
+    .input_container{
+    /* display: block  !important; */
+    margin: 1.6rem 0 !important;
+    /* border: 1px solid #000 !important; */
+    border-radius: 6px;
+    }
+    .input_container input{
+        /* height: 30px !important ; */
+        font-size: 18px;
+    }
+    .input_container input::placeholder{
+    font-size:18px ;
+    transition: all 0.2s ease-in-out ;
+    }
+    .input_container:focus input:focus::placeholder{
+        opacity: 0 !important;
+    }
+    .input_container::placeholder{
+        font-size: 20px !important;
+    }
+    /* .MuiInputBase-input {
+        display: block;
+    }
+    .MuiFormControl-root .MuiTextField-root .login_input__1z3Im{
+        display: block;
+        width: 100%;
+    }
+    .MuiInputBase-root .MuiOutlinedInput-root .MuiInputBase-formControl{
+        width: 100%;
+        display: block !important;
+    }
+    */
+    .MuiFormControl-root {
+        display: flex !important;
+    }
+    .link{
+        display: block;
+        margin: 1rem 0;
+        font-size: 18px;
+        color: var(--primary_color);
+    }
+    .sm_link{
+        font-size: 14px;
+        color: var(--primary_color);
+        text-decoration: underline  !important;
+        margin: 0.6rem 0;
+        display: block;
+        
+    
+    }
+    .primary_button{
+        padding: 1.6rem 0 !important;
+        background-color: var(--primary_color) !important;
+        font-weight: bold !important;
+        font-size: 1.6rem !important;
+        text-transform: capitalize !important;
+        margin: 3rem 0 !important;
+    }
+    .connect_text{
+        margin: 3rem 0 !important;
+        color: gray !important;
+    }
+    .social_container{
+    margin: 0 auto !important;
+    }
+    .social_button{
+    width: 80% !important;
+    padding: 3rem 0 !important;
+    }
+    .primary{
+        background-color: #3B5999 !important;
+    }
+    .secondary{
+        background-color: #DD4B39 !important;
+    }
+    .warning{
+        display: block;
+        color:rgba(240, 18, 10, 0.883);
+        font-size: 12px;
+        margin-top: -10px !important;
+    }
+    .disabled{
+        background-color:rgba(240, 18, 10, 0.883) !important;
+        color: #fff !important;
+        padding: 2rem 0 !important;
+        font-weight: bold !important;
+        font-size: 1.6rem;
+        margin: 3rem 0 !important;
+    
+    }

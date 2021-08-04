@@ -32,12 +32,8 @@ border-radius: 6px;
 font-size:18px ;
 transition: all 0.2s ease-in-out ;
 }
-.input_container:focus input:focus::placeholder{
-    opacity: 0 !important;
-}
-.input_container::placeholder{
-    font-size: 20px !important;
-}
+
+
 /* .MuiInputBase-input {
     display: block;
 }
@@ -54,6 +50,8 @@ transition: all 0.2s ease-in-out ;
     display: flex !important;
 }
 .link{
+    display: block;
+    margin: 1rem 0;
     font-size: 18px;
     color: var(--primary_color);
 }
