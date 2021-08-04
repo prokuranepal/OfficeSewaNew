@@ -6,23 +6,31 @@ const LinkButton = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.root} onClick={props.onClick}>
-            {props.title}
+            {props.icon?props.icon:null}
+            <div>{props.title}</div>
         </div>
     )
 };
 
 const useStyles = makeStyles({
     root: {
-        display: 'inline-block',
-        color: colors.secondary,
+        maxWidth: '150px',
+        display: 'flex',
+        color: colors.primary,
         fontSize: '14px',
         margin: '10px 0px',
         fontWeight: 'bold',
         cursor: 'pointer',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
         '&:hover': {
-            color: colors.primary
+            color: colors.secondary
         }
     },
+    title: {
+
+    }
 
 });
 
