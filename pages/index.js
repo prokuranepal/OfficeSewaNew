@@ -6,6 +6,7 @@ import ChangePassword from '../pages/ChangePassword'
 import ChangePasswordPage from '../pages/ChangePassword';
 import Login from '../pages/login/index'
 import Register from '../pages/Register'
+import ProductOverview from '../components/shared/ProductOverview';
 import ForgotPassword from '../pages/ForgotPassword/';
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
       {/* <Register /> */}
       {/* <ForgotPassword /> */}
       {/* <Login /> */}
-      <ChangePassword />
+      {/* <ChangePassword /> */}
+      <ProductOverview />
       {/* <p className="header">hello</p> */}
     </div >
   )
