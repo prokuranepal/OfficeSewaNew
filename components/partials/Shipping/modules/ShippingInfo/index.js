@@ -11,11 +11,11 @@ const ShippingInfo = (props) => {
             </div>
             <div>
                 <span><strong>Phone: </strong></span>
-                <span>9842558818</span>
+                <span>{props.address.phone}</span>
             </div>
             <div>
                 <span><strong>Address: </strong></span>
-                <span>Dharan-1, Sunsari</span>
+                <span>{props.address.cityArea + ", " + props.address.city + ", " + props.address.streetAddress2}</span>
             </div>
         </div>
     )

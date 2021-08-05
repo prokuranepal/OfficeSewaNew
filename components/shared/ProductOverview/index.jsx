@@ -227,8 +227,8 @@ export const ProductOverview = (props) => {
                                 </div>
                             </div>
                             <div className={classes.buttonContainer}>
-                                <CustomButton title="Add to Cart" />
-                                <CustomButton title="Buy now" color={colors.secondary} />
+                                <CustomButton title="Add to Cart" fullWidth="100%" primary={colors.primary} />
+                                <CustomButton title="Buy now" fullWidth="100%" secondary={colors.secondary} />
 
                             </div>
                         </Grid>

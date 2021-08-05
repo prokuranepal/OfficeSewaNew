@@ -12,8 +12,8 @@ const useStyles = makeStyles(theme => ({
     mainContainer: {
         width: "100vw",
         background: "#fff",
-        position: 'fixed',
-        bottom: '0',
+        // position: 'fixed',
+        // bottom: '0',
 
     },
     footerContainer: {

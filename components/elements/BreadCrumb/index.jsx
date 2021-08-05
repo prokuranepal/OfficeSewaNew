@@ -14,9 +14,9 @@ const LoginPage = (props) => {
         <div className={classes.breadcrumbs}>
             <Breadcrumbs aria-label="breadcrumb">
                 {props.breadcrumb ? props.breadcrumb.map(crumb => {
-                    return crumb.url ? <Link color="inherit" href={crumb.url}>
+                    return crumb.url ? <Link color="inherit" href={crumb.url} key={crumb.text}>
                         <div className={classes.linkText}>{crumb.text}</div>
-                    </Link> : <div className={classes.text}>{crumb.text}</div>
+                    </Link> : <div className={classes.text} key={crumb.text}>{crumb.text}</div>
                 })
 
                     : null}

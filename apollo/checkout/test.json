@@ -1,0 +1,41 @@
+{
+    "checkoutId": "Q2hlY2tvdXQ6OTZlYzNhYzMtYTM3OS00ZTA1LWI1ZWUtMjJiNWMwZDgwY2Zj",
+    "shippingAddress": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "Prokura Innovations",
+        "streetAddress1": "1470  Pinewood Avenue",
+        "streetAddress2": "1470  Pinewood Avenue",
+        "city": "Michigan",
+        "cityArea": "MI",
+        "phone": "+9779842558818",
+        "postalCode": "49855",
+        "country": "US",
+        "countryArea": "MI"
+    },
+    "billingAddress": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "Prokura Innovations",
+        "streetAddress1": "1470  Pinewood Avenue",
+        "streetAddress2": "1470  Pinewood Avenue",
+        "city": "Michigan",
+        "cityArea": "MI",
+        "phone": "+9779842558818",
+        "postalCode": "49855",
+        "country": "US",
+        "countryArea": "MI"
+    },
+    "lines": [
+        {
+            "variantId": "UHJvZHVjdFZhcmlhbnQ6MjAz",
+            "quantity": 1
+        }
+    ],
+    "email": "prokurainnovationsnepal@gmail.com",
+    "shippingMethodId": "U2hpcHBpbmdNZXRob2Q6MTU=",
+    "amount": 63.76,
+    "gateway": "mirumee.payments.dummy",
+    "token": "tokencc_bh_s3bjkh_24smq8_6c6zhq_w4v6b9_8vz",
+    "paymentData": "{\"paymentId\":\"UGF5bWVudDoyMg==\"}"
+}
