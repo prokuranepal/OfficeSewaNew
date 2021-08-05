@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ExpandMore } from '@material-ui/icons'
-// import styles from '../../styles/Navbar.module.css';
+import ExpandMore from '@material-ui/icons/ExpandMore';
 import { makeStyles } from "@material-ui/core/styles"
 
 const MegaMenu = ({ menuCat }) => {
@@ -10,12 +9,12 @@ const MegaMenu = ({ menuCat }) => {
     return (
         <div className={classes.navbarContainer}>
             { menuCat.map(item=>(
-        <div className={classes.divcontainer}>
+        <div key={item.menu} className={classes.divcontainer}>
         <li className={classes.catContainer}>
-        <Link href={`/categories/${item.menu}`} >
+        <Link href={`/shop/categories/${item.menu}`} >
             <a>
                 {item.menu} {'  '}
-                <ExpandMore color="white"/>
+                <ExpandMore fontSize="small" />
             </a>
         </Link>
        
@@ -54,8 +53,8 @@ const MegaMenu = ({ menuCat }) => {
             'background-color': '#1961a5',
             display: 'flex',
             'padding-left':'50px',
-            '& div':{     
-                '& li' :{ 
+            '& > div':{     
+                '& > li' :{ 
                      '&ul': {
                      margin:'0px',
                      padding: '0px',
@@ -63,7 +62,7 @@ const MegaMenu = ({ menuCat }) => {
                      color:'green',
                     
                  },
-                 '& a':{
+                 '& > a':{
                      'padding-right':'5px',
                     // '&::after': {
                     //     content: '"\e93a"',
@@ -91,7 +90,7 @@ const MegaMenu = ({ menuCat }) => {
                 },
                 
                     '&:hover':{
-                        '& a': {
+                        '& > a': {
                             '&:before':{
                             visibility:'visible',
                             opacity:'1',
@@ -114,6 +113,7 @@ const MegaMenu = ({ menuCat }) => {
             'font-family':'Work Sans, sans-serif',
             'font-size': '14px',
             width:'100%',
+            'padding-bottom':'15px',
             'flex-flow': 'row nowrap',
             'font-weight': 'bold',
         },
@@ -146,7 +146,7 @@ const MegaMenu = ({ menuCat }) => {
         subMenuContainer: {
             position: 'absolute',
             'background-color':'white', 
-            'min-width': '240px',
+            minWidth: '240px',
             visibility: 'hidden',
             display:'flex',
             'z-index':'1000',
@@ -163,7 +163,7 @@ const MegaMenu = ({ menuCat }) => {
         subItemStyle: {
             'list-style-type': 'none',
             padding: '0px 0px 10px 0px',
-            '& a':{
+            '& > a':{
                 'font-family':'Work Sans, sans-serif',
                 color:'black',
                 'font-size': '14px',
@@ -171,6 +171,7 @@ const MegaMenu = ({ menuCat }) => {
                 '&:hover':{
                     color:'#1961a5'
                 }
+                
             },
         },
         

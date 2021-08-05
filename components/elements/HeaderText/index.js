@@ -8,7 +8,7 @@ const HeaderText = (props) => {
     return (
         <div className={classes.containerStyle}>
             <div className={classes.text}>
-            {props.title}
+                {props.title}
             </div>
         </div>
     )

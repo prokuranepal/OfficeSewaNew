@@ -3,13 +3,17 @@ import { TextField, Typography } from '@material-ui/core'
 import { makeStyles } from "@material-ui/styles"
 const useStyles = makeStyles({
     inputContainer: {
-        margin: "1.6rem 0",
+        margin: "1rem 0",
         borderRadius: "6px",
     },
     input: {
         '& .MuiInputBase-input': {
 
-            fontSize: "18px"
+            fontSize: "16px",
+            color: "#595959",
+        },
+        '& .MuiInputBase-input::placeholder': {
+            color: "#595959",
         }
     },
     warning: {

@@ -5,11 +5,11 @@ import { TextField, Typography, FormControl, OutlinedInput, InputAdornment, Icon
 import { makeStyles } from '@material-ui/styles'
 const useStyles = makeStyles({
     inputContainer: {
-        margin: "1.6rem 0",
+        margin: "1rem 0",
         borderRadius: "6px"
     },
     input: {
-        fontSize: "18px",
+        fontSize: "16px",
         '&::placeholder': {
             fontSize: "18px"
         }

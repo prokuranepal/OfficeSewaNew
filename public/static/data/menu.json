@@ -18,35 +18,42 @@
                                 "slug": "dell-desktop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NTU="
+                                "id": "Q2F0ZWdvcnk6NTU=",
+                                "thumb": "dell-inspiron-3520-desktop-500x500.jpg"
                             },
                             {
                                 "text": "HP Desktops",
                                 "slug": "hp-desktop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NTY="
+                                "id": "Q2F0ZWdvcnk6NTY=",
+                                "thumb": "used-hp-desktop-computer-500x500.jpg"
                             },
                             {
                                 "text": "MSI Desktops",
                                 "slug": "msi-desktop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NTc="
+                                "id": "Q2F0ZWdvcnk6NTc=",
+                                "thumb": "codex-r-10tg-020us-gaming-desktop-computer-msi--673.jpg"
+                        
                             },
                             {
                                 "text": "Lenovo Desktops",
                                 "slug": "lenovo-desktop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NTg="
+                                "id": "Q2F0ZWdvcnk6NTg=",
+                                "thumb": "lenovo-desktop-computer-500x500.jpg"
                             },
                             {
                                 "text": "Asus Desktops",
                                 "slug": "asus-desktop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NTk="
+                                "id": "Q2F0ZWdvcnk6NTk=",
+                                "thumb": "asus-desktop-computer-500x500.jpeg"
+                            
                             }
                         ]
                     },
@@ -54,32 +61,36 @@
                         "heading": "Laptops",
                         "megaItems": [
                             {
-                                "text": "Dell",
+                                "text": "Dell Laptops",
                                 "slug": "dell-laptop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjA="
+                                "id": "Q2F0ZWdvcnk6NjA=",
+                                "thumb": "dell-laptop-500x500.jpg"
                             },
                             {
-                                "text": "Lenovo",
+                                "text": "Lenovo Laptops",
                                 "slug": "lenovo-laptop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjE="
+                                "id": "Q2F0ZWdvcnk6NjE=",
+                                "thumb": "multimedia-lenovo-laptop-500x500.png"
                             },
                             {
-                                "text": "MSI",
+                                "text": "MSI Laptops",
                                 "slug": "msi-laptop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjI="
+                                "id": "Q2F0ZWdvcnk6NjI=",
+                                "thumb": "index.jpeg"
                             },
                             {
-                                "text": "Asus",
+                                "text": "Asus Laptops",
                                 "slug": "asus-laptop",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjM="
+                                "id": "Q2F0ZWdvcnk6NjM=",
+                                "thumb": "asus-office-laptop-500x500.jpg"
                             }
                         ]
                     },
@@ -91,56 +102,64 @@
                                 "slug": "computer-casing",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjQ="
+                                "id": "Q2F0ZWdvcnk6NjQ=",
+                                "thumb": "product-gallery-df500rgb-3.jpg"
                             },
                             {
                                 "text": "Mouse",
                                 "slug": "mouse",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjU="
+                                "id": "Q2F0ZWdvcnk6NjU=",
+                                "thumb": "mouse.jpeg"
                             },
                             {
                                 "text": "Keyboard",
                                 "slug": "keyboard",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NjY="
+                                "id": "Q2F0ZWdvcnk6NjY=",
+                                "thumb": "gamdias.jpeg"
                             },
                             {
                                 "text": "Monitor",
                                 "slug": "monitor",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6Njc="
+                                "id": "Q2F0ZWdvcnk6Njc=",
+                                "thumb": "monitor.jpeg"
                             },
                             {
                                 "text": "Mousepad",
                                 "slug": "mousepad",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6Njg="
+                                "id": "Q2F0ZWdvcnk6Njg=",
+                                "thumb": "rubber-mouse-pad-with-3mm-thickness-non-slip-skid-resistant-anti-sk_uJa0tpK.jpg"
                             },
                             {
                                 "text": "Pendrive",
                                 "slug": "pendrive",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6Njk="
+                                "id": "Q2F0ZWdvcnk6Njk=",
+                                "thumb": "pendrive-sandisk-cruzer-blade-64gb-5-yrs-warranty-500x500.jpg"
                             },
                             {
                                 "text": "Internal SSD",
                                 "slug": "internal-ssd",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NzA="
+                                "id": "Q2F0ZWdvcnk6NzA=",
+                                "thumb": "wd-blue-500gb-m-2-sata-iii-internal-ssd-hard-disk-500x500.jpg"
                             },
                             {
                                 "text": "External SSD",
                                 "slug": "external-ssd",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NzE="
+                                "id": "Q2F0ZWdvcnk6NzE=",
+                                "thumb": "images_BieCIRb.jpeg"
                             }
                         ]
                     },
@@ -152,21 +171,25 @@
                                 "slug": "router",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NzI="
+                                "id": "Q2F0ZWdvcnk6NzI=",
+                                "thumb": "tl-wr841n-v14-tp-link-wireless-router-500x500.jpg"
                             },
                             {
                                 "text": "Switch",
                                 "slug": "switch",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NzM="
+                                "id": "Q2F0ZWdvcnk6NzM=",
+                                "thumb": "PCSE1650M_16-Port_10100Mbps_Managed_Ethernet_Switch-500x500.jpg"
                             },
                             {
                                 "text": "Cables",
                                 "slug": "cable",
                                 "cat": "laptop_and_computer",
                                 "url": "/shop/shop_products/laptops",
-                                "id": "Q2F0ZWdvcnk6NzQ="
+                                "id": "Q2F0ZWdvcnk6NzQ=",
+                                "thumb": "electric-cables-500x500.jpg"
+
                             }
                         ]
                     }
@@ -189,35 +212,40 @@
                                 "slug": "samsung",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6NzU="
+                                "id": "Q2F0ZWdvcnk6NzU=",
+                                "thumb": "samsung-air-conditioner-500x500.jpg"
                             },
                             {
                                 "text": "Yasuda",
                                 "slug": "yasuda",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6NzY="
+                                "id": "Q2F0ZWdvcnk6NzY=",
+                                "thumb": "1yasuda-ys-ac09tg-split-ac-0-75-ton-white.jpg"
                             },
                             {
                                 "text": "Colors",
                                 "slug": "colors",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6Nzc="
+                                "id": "Q2F0ZWdvcnk6Nzc=",
+                                "thumb": "conferenceTable.jpg"
                             },
                             {
                                 "text": "Panasonic",
                                 "slug": "panasonic",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6Nzg="
+                                "id": "Q2F0ZWdvcnk6Nzg=",
+                                "thumb": "panasonic-air-conditioner-500x500.jpg"
                             },
                             {
                                 "text": "Hisense",
                                 "slug": "hisense",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6Nzk="
+                                "id": "Q2F0ZWdvcnk6Nzk=",
+                                "thumb": "1hisense-as-18ur4sxatg02-inverter-split-ac-1-5-ton-.jpg"
                             }
                         ]
                     },
@@ -229,14 +257,16 @@
                                 "slug": "room-heater",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODA="
+                                "id": "Q2F0ZWdvcnk6ODA=",
+                                "thumb": "heater.jpeg"
                             },
                             {
                                 "text": "Water Heater",
                                 "slug": "water-heater",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODE="
+                                "id": "Q2F0ZWdvcnk6ODE=",
+                                "thumb": "max-hot-water-heaters-500x500.jpeg"
                             }
                         ]
                     },
@@ -248,28 +278,32 @@
                                 "slug": "iron",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODI="
+                                "id": "Q2F0ZWdvcnk6ODI=",
+                                "thumb": "mini-electric-iron-500x500.jpg"
                             },
                             {
                                 "text": "Washing Machine",
                                 "slug": "washing-machine",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODM="
+                                "id": "Q2F0ZWdvcnk6ODM=",
+                                "thumb": "150-kg-industrial-washing-machine-500x500.jpg"
                             },
                             {
                                 "text": "Rice Cooker",
                                 "slug": "rice-cooker",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODQ="
+                                "id": "Q2F0ZWdvcnk6ODQ=",
+                                "thumb": "prestige-prwo-0-6-2-230-v-delight-electric-rice-cooker-500x500.jpg"
                             },
                             {
                                 "text": "Refrigerator",
                                 "slug": "refrigerator",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODU="
+                                "id": "Q2F0ZWdvcnk6ODU=",
+                                "thumb": "two-door-refrigerator-500x500.jpeg"
                             }
                         ]
                     },
@@ -281,14 +315,16 @@
                                 "slug": "cctv-camera",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODY="
+                                "id": "Q2F0ZWdvcnk6ODY=",
+                                "thumb": "1-3mp-hd-outdoor-cctv-camera-500x500.jpg"
                             },
                             {
                                 "text": "Web Cams",
                                 "slug": "web-cam",
                                 "cat": "electronic",
                                 "url": "/shop/shop_products/electronics",
-                                "id": "Q2F0ZWdvcnk6ODc="
+                                "id": "Q2F0ZWdvcnk6ODc=",
+                                "thumb": "dell-webcam-500x500.jpg"
                             }
                         ]
                     }
@@ -311,28 +347,32 @@
                                 "slug": "epson-printer",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6ODg="
+                                "id": "Q2F0ZWdvcnk6ODg=",
+                                "thumb": "2pson-l360-ink-tank-printer-500x500.jpg"
                             },
                             {
                                 "text": "Brother",
                                 "slug": "brother-printer",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6ODk="
+                                "id": "Q2F0ZWdvcnk6ODk=",
+                                "thumb": "brother-mfc-t4500dw-a3-inkjet-printer-500x500.jpg"
                             },
                             {
                                 "text": "Xlab",
                                 "slug": "xlab-printer",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTA="
+                                "id": "Q2F0ZWdvcnk6OTA=",
+                                "thumb": "1x-lab-thermal-pos-receipt-printer-wifi.jpg"
                             },
                             {
                                 "text": "Samsung",
                                 "slug": "samsung-printer",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTE="
+                                "id": "Q2F0ZWdvcnk6OTE=",
+                                "thumb": "l-m2021w-xip-500x500.jpg"
                             }
                         ]
                     },
@@ -344,35 +384,40 @@
                                 "slug": "samsung-printer-part",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTI="
+                                "id": "Q2F0ZWdvcnk6OTI=",
+                                "thumb": "samsung-ml-d4550a-toner-cartridge-500x500.jpg"
                             },
                             {
                                 "text": "Epson Printer",
                                 "slug": "epson-printer-part",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTM="
+                                "id": "Q2F0ZWdvcnk6OTM=",
+                                "thumb": "epson-t0761-ink-500x500.jpg"
                             },
                             {
                                 "text": "Brother Printer",
                                 "slug": "brother-printer-part",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTQ="
+                                "id": "Q2F0ZWdvcnk6OTQ=",
+                                "thumb": "csompatible-lc-161bk-black-ink-cartridge-for-brother-printers-01__93_bktPJlH.jpg"
                             },
                             {
                                 "text": "Xlab Printer",
                                 "slug": "xlab-printer-part",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTU="
+                                "id": "Q2F0ZWdvcnk6OTU=",
+                                "thumb": "xlab1.jpg"
                             },
                             {
                                 "text": "HP Printer",
                                 "slug": "hp-printer-part",
                                 "cat": "printer_and_scanner",
                                 "url": "/shop/shop_products/printers",
-                                "id": "Q2F0ZWdvcnk6OTY="
+                                "id": "Q2F0ZWdvcnk6OTY=",
+                                "thumb": "65-hp-ink-cartridge-500x500.jpg"
                             }
                         ]
                     }
@@ -393,77 +438,88 @@
                                 "slug": "whiteboard",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTEz"
+                                "id": "Q2F0ZWdvcnk6MTEz",
+                                "thumb": "whiteboard.jpg"
                             },
                             {
                                 "text": "Notice Board",
                                 "slug": "notice-board",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE0"
+                                "id": "Q2F0ZWdvcnk6MTE0",
+                                "thumb": "notice-board-500x500.jpg"
                             },
                             {
                                 "text": "Diary",
                                 "slug": "diary",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE1"
+                                "id": "Q2F0ZWdvcnk6MTE1",
+                                "thumb": "notebook-diary-any-year-diary-500x500.jpg"
                             },
                             {
                                 "text": "Calculator",
                                 "slug": "calculator",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE2"
+                                "id": "Q2F0ZWdvcnk6MTE2",
+                                "thumb": "casio-basic-calculators-500x500.jpg"
                             },
                             {
                                 "text": "Photocopy Paper",
                                 "slug": "photocopy-paper",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE3"
+                                "id": "Q2F0ZWdvcnk6MTE3",
+                                "thumb": "U32cec94085db4f8eb11526a1fee7c979l.jpg"
                             },
                             {
                                 "text": "Binding Machine",
                                 "slug": "binding-machine",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE4"
+                                "id": "Q2F0ZWdvcnk6MTE4",
+                                "thumb": "oolscape-size-binding-machine-500x500.jpg"
                             },
                             {
                                 "text": "Punching Machine",
                                 "slug": "punching-machine",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTE5"
+                                "id": "Q2F0ZWdvcnk6MTE5",
+                                "thumb": "kangaroo-paper-punching-machine-500x500.jpg"
                             },
                             {
                                 "text": "Register",
                                 "slug": "register",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTIw"
+                                "id": "Q2F0ZWdvcnk6MTIw",
+                                "thumb": "office-register-notebook-500x500.jpg"
                             },
                             {
                                 "text": "File",
                                 "slug": "file",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTIx"
+                                "id": "Q2F0ZWdvcnk6MTIx",
+                                "thumb": "ffice-file-500x500.jpg"
                             },
                             {
                                 "text": "Pen, Pencil, Eraser, Sharpener",
                                 "slug": "pen,-pencil,-eraser,-sharpener",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTIy"
+                                "id": "Q2F0ZWdvcnk6MTIy",
+                                "thumb": "ball-pen-500x500.jpg"
                             },
                             {
                                 "text": "Stapler Machine",
                                 "slug": "stapler-machine",
                                 "cat": "stationery",
                                 "url": "/shop/shop_products/stationery",
-                                "id": "Q2F0ZWdvcnk6MTIz"
+                                "id": "Q2F0ZWdvcnk6MTIz",
+                                "thumb": "angaroo-paper-punching-machine-500x500_twxXbwB.jpg"
                             }
                         ]
                     }
@@ -570,14 +626,14 @@
                                 "text": "Partition/Cubicle",
                                 "url": "/shop/shop_products/furnitures",
                                 "slug": "partition",
-                                "thumb": "cubicle.jpg",
+                                "thumb": "partition.jpg",
                                 "id": "Q2F0ZWdvcnk6MzY="
                             },
                             {
                                 "text": "Wallpaper",
                                 "url": "/shop/shop_products/furnitures",
                                 "slug": "wallpaper",
-                                "thumb": "partition.jpg",
+                                "thumb": "wallpaper.jpg",
                                 "id": "Q2F0ZWdvcnk6NDA="
                             },
                             {
@@ -612,7 +668,7 @@
                                 "text": "Bar Stool",
                                 "url": "/shop/shop_products/furnitures",
                                 "slug": "bar-stool",
-                                "thumb": "barStool.jpg",
+                                "thumb": "stool.jpg",
                                 "id": "Q2F0ZWdvcnk6Mzk="
                             },
                             {
