@@ -10,12 +10,18 @@ import ChangePasswordPage from '../pages/ChangePassword';
 import Login from '../pages/login/index'
 import Register from '../pages/Register'
 import ForgotPassword from '../pages/ForgotPassword/';
+import Head from '../components/layouts/modules/Head';
+
+
 import {menuCat} from '../public/static/data/category';
 import SiteFeatures from '../components/SiteFeatures';
 import DefaultHomeBanner from '../components/DefaultHomeBanner';
-import Product from '../components/elements/Product/Product'
+// import Product from '../components/elements/Product/Product';
+import ProductOnCart from '../components/elements/Product/ProductOnCart';
+import ProductGroupWithCarousel from '../components/partials/Product/ProductGroupWithCarousel';
+import HomeDefaultProductListing from '../components/partials/HomePage/HomeDefaultProductListing';
 
-const product={id:1,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/mini-electric-iron-500x500.jpg"},title:'300 Watt Steam Featured Electric Iron', price:2000,sale_price:3000,rating:4.5}
+
 export default function Home() {
   
 const breadCrumb = [
@@ -38,14 +44,22 @@ const breadCrumb = [
          )}
       </div>  */}
       
-       
+       <Head/>
      
       <MegaMenu menuCat={menuCat}/>
       <DefaultHomeBanner />
       
 <SiteFeatures/>
+ <div style={{marginLeft:20, marginBottom:30}}>
+ <HomeDefaultProductListing title="Stationery"/> 
+ </div>
 
-<Product product={product}/>
+ <div style={{marginLeft:20}}>
+ <HomeDefaultProductListing title="Furniture"/> 
+ </div>
+{/* <Product product={product}/> */}
+{/* <ProductOnCart product={product}/> */}
+
          {/* <BreadCrumb breadcrumb={breadCrumb}/> */}
       {/* <Footer/> */}
     </div>

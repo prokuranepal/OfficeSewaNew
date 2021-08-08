@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const Product = ({ product }) => {
     // Views
+    console.log(product,'product')
     const priceView = ProductPrice(product);
     const thumbnailImage = ProductThumbnail(product);
     // const badgeView = ProductBadge(product);
@@ -58,18 +59,24 @@ export default Product;
 
 const useStyles = makeStyles(theme => ({
     container:{
-        margin:200,
-        width:200,
-        height:350,
+        marginLeft:0,
+        minWidth:100,
+        maxWidth:220,
+        // height:350,
         display:'block', 
         'align-items':'center', 
         justifyContent:'center',
         // backgroundColor:'green',
-        overflow:'hidden'
+        padding:10,
+        overflow:'hidden',
+        '&:hover':{
+            border: '1px solid #aaa'
+        }
     },
    thumbnail:{
     //    height:250,
     //    width:250,
+    marginBottom:5,
        '& img':{
            width:'100%',
         //    height:'100%',
@@ -80,7 +87,7 @@ const useStyles = makeStyles(theme => ({
    vendor:{
        fontSize:12,
        color:'#666',
-       fontWeight:'bold'
+       fontWeight:'bold',
        
    },
    underline:{

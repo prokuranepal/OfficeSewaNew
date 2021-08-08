@@ -169,3 +169,44 @@ flex:1;
   color: #9e8d8d;
   font-size: 1.6rem;
 }
+
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+
+.slick-dots > li {
+  display: inline-block;
+  /* margin-right: 10px; */
+  vertical-align: top;
+ 
+  /* &:last-child {
+      margin-right: 0;
+  }
+  &.slick-active {
+      button {
+          background-color: $color-1st;
+      }
+  } */
+}
+.slick-dots >li > button {
+  display: block;
+  /* vertical-align: top; */
+  padding: 0;
+  font-size: 0;
+  border-radius: 0;
+  /* border:3px #ff0000 solid; */
+  width: 10px;
+  height: 10px;
+  background-color: rgba('#ff00000', 0.3);
+  border-radius: 50%;
+}
+
+.slick-dots >li > .slick-active >button:active {
+  
+      background-color: 'blue';
+  
+}

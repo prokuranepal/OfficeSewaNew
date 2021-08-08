@@ -157,7 +157,7 @@ const MegaMenu = ({ menuCat }) => {
             border: '1px solid #ccc',
             transition: 'all 0.25s ease',
             'border-radius': '3px',
-            padding: '20px 15px 0px 25px' ,
+            padding: '20px 15px 15px 25px' ,
         },
    
         subItemStyle: {
