@@ -30,7 +30,7 @@ const MegaMenu = ({ menuCat }) => {
                 (
                 <li key={subItem.text}
                  className={classes.subItemStyle}>
-                    <Link href={`/products/${subMenuItem.menu}`}>
+                    <Link href={`/shop/products/${subMenuItem.menu}`}>
                         <a>{subMenuItem.menu}</a>
                     </Link>
                 </li>

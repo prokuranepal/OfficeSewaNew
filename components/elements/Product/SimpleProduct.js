@@ -28,27 +28,25 @@ const Product = ({ product }) => {
                 <ModuleProductActions product={product} />
             </div>
             <div className={classes.subcontainer}>
-                <Link href="/shop">
-                    <a className={classes.vendor}>YOUNG SHOP</a>
-                </Link>
-                <div className={classes.underline}/>
-                <div className="ps-product__content">
-                {priceView}
-
-                    <Link href="/product/[pid]" as={`/product/${product.id}`}>
+                           <Link href="/product/[pid]" as={`/product/${product.id}`}>
                         <a className={classes.title}>{product.title}</a>
                     </Link>
-                    <div className="ps-product__rating">
-                        <Rating rating={product.rating}/>
+                    <div >
+                        <Rating iconSize={20} rating={product.rating}/>
                         {/* <span>02</span> */}
                     </div>
+                    <div style={{fontSize:15, color:'#1961a5',        fontFamily:'Work Sans, sans-serif'
+}}>
+                    Rs. {product.sale_price}
+                    </div>
+                   
+                    
                 </div>
                 {/* <div className="ps-product__content hover">
                     <Link href="/product/[pid]" as={`/product/${product.id}`}>
                         <a className="ps-product__title">{product.title}</a>
                     </Link>
                 </div> */}
-            </div>
         </div>
     );
 };
@@ -61,7 +59,7 @@ const useStyles = makeStyles(theme => ({
     container:{
         marginLeft:0,
         minWidth:100,
-        maxWidth:250,
+        maxWidth:280,
         // height:350,
         display:'block', 
         'align-items':'center', 
@@ -102,6 +100,17 @@ const useStyles = makeStyles(theme => ({
            
         }
     },
+    subcontainer:{
+        '& > div':{
+            paddingTop:5,
+            paddingBottom:5,
+            '& > span':{
+                '& > i':{
+                    fontSize:15
+                }
+            }
+        }
+    },
    thumbnail:{
     //    height:250,
     //    width:250,
@@ -128,8 +137,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop:5,
    },
    title:{
-       fontSize:13,
-        color:'#333',
+       fontSize:14,
+        color:'#1961a5',
         fontFamily:'Work Sans, sans-serif'
    }
     }))

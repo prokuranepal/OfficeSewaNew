@@ -7,7 +7,6 @@ import PrevArrow from '../../elements/Carousel/PrevArrow';
 
 
  const ProductGroupWithCarousel = ({ products, type = 'normal' }) => {
-    console.log(products, 'productsss')
 
  const carouselStandard = {
         dots: true,

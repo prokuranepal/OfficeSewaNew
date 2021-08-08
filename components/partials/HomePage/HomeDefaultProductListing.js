@@ -6,12 +6,12 @@ import Link from 'next/link';
 import ProductGroupWithCarousel from '../Product/ProductGroupWithCarousel';
 import { makeStyles } from "@material-ui/core/styles"
 const product=[
-    {id:1,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/mini-electric-iron-500x500.jpg"},title:'300 Watt Steam Featured Electric Iron', price:2000,sale_price:3000,rating:4.5},
+    {id:1,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/mini-electric-iron-500x500.jpg"},title:'300 Watt Steam Featured Electric Iron', price:3000,sale_price:2000,rating:4.5},
     {id:2,thumbnail:{url:"http://206.189.141.84:8002/media/category-backgrounds/kangaroo-paper-punching-machine-500x500_twxXbwB.jpg"},title:'Punching Machine', price:1000,sale_price:800,rating:3.0},
-    {id:3,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/notebook-diary-any-year-diary-500x500.jpg"},title:'Notebook diary', price:200,sale_price:300,rating:4.0},
-    {id:4,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/mini-electric-iron-500x500.jpg"},title:'300 Watt Steam Featured Electric Iron', price:2000,sale_price:3000,rating:4.5},
-    {id:5,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/1x-lab-thermal-pos-receipt-printer-wifi.jpg"},title:'Lab Thermal Printer w Wifi', price:6000,sale_price:7000,rating:4.5},
-    {id:6,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/samsung-air-conditioner-500x500.jpg"},title:'Samsung Air 5 Star Split Conditioner', price:50000,sale_price:55000,rating:4.0}
+    {id:3,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/notebook-diary-any-year-diary-500x500.jpg"},title:'Notebook diary', price:300,sale_price:200,rating:4.0},
+    {id:4,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/mini-electric-iron-500x500.jpg"},title:'300 Watt Steam Featured Electric Iron', price:3000,sale_price:2000,rating:3.5},
+    {id:5,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/1x-lab-thermal-pos-receipt-printer-wifi.jpg"},title:'Lab Thermal Printer w Wifi', price:7000,sale_price:6000,rating:4.5},
+    {id:6,thumbnail:{url:"https://shovan.prokurainnovations.com/media/category-backgrounds/samsung-air-conditioner-500x500.jpg"},title:'Samsung Air 5 Star Split Conditioner', price:55000,sale_price:50000,rating:4.0}
     ]
     
 
@@ -63,7 +63,6 @@ const HomeDefaultProductListing = ({ collectionSlug, title }) => {
     useEffect(() => {
         // getProducts(collectionSlug);
     }, [collectionSlug]);
-console.log('current', currentCollection)
     const sectionLinksView = sectionLinks.map((link) => (
         <li
             className={currentCollection === link.name ? classes.activeLink : classes.inactiveLink}

@@ -7,7 +7,7 @@ const Rating = (props) => {
     const floorRating=Math.floor(props.rating);
     const starArray= new Array(floorRating).fill(0);
     const emptyArray = new Array(floorRating!=props.rating?4-floorRating:5-floorRating).fill(0)
-    console.log(starArray)
+    console.log(floorRating, props.rating)
     return (
     <span className={classes.container}>
        { starArray.map(()=> <i className="fa fa-star"/>)}

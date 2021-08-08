@@ -6,13 +6,13 @@ import Register from '../pages/Register'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
-  return (
-    <>
-      {/* <SearchBar /> */}
-      {/* <Login />
-      <ChangePassword /> */}
-    </>
-  )
+  // return (
+  //   <>
+  //     {/* <SearchBar /> */}
+  //     {/* <Login />
+  //     <ChangePassword /> */}
+  //   </>
+  // )
 }
 
 export default MyApp
