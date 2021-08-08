@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         overflow: "auto",
+        [theme.breakpoints.down("sm")]: {
+            alignItems: "start"
+        }
     },
     image: {
         width: "100%",
@@ -42,6 +45,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         flexDirection: "column",
         // alignItems: "center"
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: "flex-start"
+        }
+
     },
     imageContainer: {
 
@@ -51,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
     contentContainer: {
         paddingLeft: " 60px",
         [theme.breakpoints.down('sm')]: {
-            padding: "0"
+            padding: "0",
+            paddingTop: "20px"
         }
     },
     modalContainer: {
@@ -63,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "4rem",
         background: "#fff",
         [theme.breakpoints.down("sm")]: {
-            marginTop: "50vw"
+            // marginTop: "50vw"
+            minHeight: "140vh"
         }
 
     },
@@ -183,60 +192,59 @@ export const ProductOverview = (props) => {
         setOpen(false)
     }
     return (
-        <div ref={rootRef}>
-            <Modal
-                disablePortal
-                disableEnforceFocus
-                disableAutoFocus
-                onClose={handleClose}
-                open={open}
-                aria-labelledby="server-modal-title"
-                aria-describedby="server-modal-description"
-                className={classes.modal}
-                container={() => rootRef.current}
-            >
-                <div className={classes.modalContainer}>
-                    <Grid container className={classes.gridContainer}>
-                        <Grid item xs={12} md={5} className={`${classes.modalItem} ${classes.imageContainer}`}>
-                            {/* <Image src={"/images/big.png"} width={1000} height={600} priority className={classes.image} /> */}
-                            <img className={classes.image} src={imgSrc} alt="" />
+        <Modal
+            disablePortal
+            disableEnforceFocus
+            disableAutoFocus
+            onClose={handleClose}
+            open={open}
+            aria-labelledby="server-modal-title"
+            aria-describedby="server-modal-description"
+            className={classes.modal}
+        // container={() => rootRef.current}
+        >
+            <div className={classes.modalContainer}>
+                <Grid container className={classes.gridContainer}>
+                    <Grid item xs={12} md={5} className={`${classes.modalItem} ${classes.imageContainer}`}>
+                        {/* <Image src={"/images/big.png"} width={1000} height={600} priority className={classes.image} /> */}
+                        <img className={classes.image} src={imgSrc} alt="" />
 
-                            <Carousel handleClick={handleClick} carouselDecreaseHandler={carouselDecreaseHandler} carouselIncreaseHandler={carouselIncreaseHandler} data={carousel} />
-                        </Grid>
-                        <Grid item xs={12} md={7} className={`${classes.modalItem} ${classes.contentContainer}`}>
-                            <ProductHeader>Unero Military Classical Backpack</ProductHeader>
-                            <ProductPrice>Rs 2400</ProductPrice>
-                            <ul className={classes.containerStyle}>
-                                <li className={classes.text}>Unrestrained and portable active stereo speaker</li>
-                                <li className={classes.text}> Free from the confines of wires and chords</li>
-                                <li className={classes.text}> 20 hours of portable capabilities</li>
-                                <li className={classes.text}> Double-ended Coil Cord with 3.5mm Stereo Plugs Included</li>
-                                <li className={classes.text}> 3/4″ Dome Tweeters: 2X and 4″ Woofer: 1X</li>
-                            </ul>
-                            <Typography variant="h3" className={classes.quantity}>Quantity</Typography>
-                            <div className={classes.quantityContainer}>
-                                <div className={classes.button}>
-                                    <AiOutlineMinus onClick={decreaseAmountHandler} className={classes.buttonIcon} />
-                                    <Typography variant="span" className={classes.amount}>{amount}</Typography>
-                                    <AiOutlinePlus onClick={increaseAmountHandler} className={classes.buttonIcon} />
-
-                                </div>
-                                <div className={classes.wishContainer}>
-                                    <BsHeart className={classes.wishIcon} />
-                                    <AiFillSignal className={classes.wishIcon} />
-                                </div>
-                            </div>
-                            <div className={classes.buttonContainer}>
-                                <CustomButton title="Add to Cart" fullWidth="100%" primary={colors.primary} />
-                                <CustomButton title="Buy now" fullWidth="100%" secondary={colors.secondary} />
-
-                            </div>
-                        </Grid>
+                        <Carousel handleClick={handleClick} carouselDecreaseHandler={carouselDecreaseHandler} carouselIncreaseHandler={carouselIncreaseHandler} data={carousel} />
                     </Grid>
-                </div>
-            </Modal>
+                    <Grid item xs={12} md={7} className={`${classes.modalItem} ${classes.contentContainer}`}>
+                        <ProductHeader>Unero Military Classical Backpack</ProductHeader>
+                        <ProductPrice>Rs 2400</ProductPrice>
+                        <ul className={classes.containerStyle}>
+                            <li className={classes.text}>Unrestrained and portable active stereo speaker</li>
+                            <li className={classes.text}> Free from the confines of wires and chords</li>
+                            <li className={classes.text}> 20 hours of portable capabilities</li>
+                            <li className={classes.text}> Double-ended Coil Cord with 3.5mm Stereo Plugs Included</li>
+                            <li className={classes.text}> 3/4″ Dome Tweeters: 2X and 4″ Woofer: 1X</li>
+                        </ul>
+                        <Typography variant="h3" className={classes.quantity}>Quantity</Typography>
+                        <div className={classes.quantityContainer}>
+                            <div className={classes.button}>
+                                <AiOutlineMinus onClick={decreaseAmountHandler} className={classes.buttonIcon} />
+                                <Typography variant="span" className={classes.amount}>{amount}</Typography>
+                                <AiOutlinePlus onClick={increaseAmountHandler} className={classes.buttonIcon} />
 
-        </div>
+                            </div>
+                            <div className={classes.wishContainer}>
+                                <BsHeart className={classes.wishIcon} />
+                                <AiFillSignal className={classes.wishIcon} />
+                            </div>
+                        </div>
+                        <div className={classes.buttonContainer}>
+                            <CustomButton title="Add to Cart" fullWidth="100%" primary={colors.primary} />
+                            <CustomButton title="Buy now" fullWidth="100%" secondary={colors.secondary} />
+
+                        </div>
+                    </Grid>
+                </Grid>
+            </div>
+        </Modal>
+
+
     );
 }
 

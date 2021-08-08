@@ -8,7 +8,7 @@ import Login from '../pages/login/index'
 import Register from '../pages/Register'
 import ProductOverview from '../components/shared/ProductOverview';
 import ForgotPassword from '../pages/ForgotPassword/';
-
+import ProductDetails from '../components/shared/ProductDetails'
 export default function Home() {
   return (
     <div >
@@ -17,7 +17,8 @@ export default function Home() {
       {/* <ForgotPassword /> */}
       {/* <Login /> */}
       {/* <ChangePassword /> */}
-      <ProductOverview />
+      {/* <ProductOverview /> */}
+      <ProductDetails />
       {/* <p className="header">hello</p> */}
     </div >
   )

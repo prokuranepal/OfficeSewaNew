@@ -29,7 +29,6 @@ const useStyles = makeStyles({
         backgroundColor: props.primary ? colors.primary : colors.secondary,
         transition: 'all 0.4s ease',
         cursor: 'pointer',
-
         '&:hover': {
             backgroundColor: props.primary ? colors.secondary : colors.primary
         }

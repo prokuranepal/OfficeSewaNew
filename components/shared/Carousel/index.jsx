@@ -1,25 +1,31 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 import { AiOutlineLeft } from 'react-icons/ai'
 import { AiOutlineRight } from 'react-icons/ai'
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     smallImageContainer: {
         position: "relative",
         width: "100%",
-        margin: "20px 0",
+        marginTop: "5% ",
+        height: "25%",
+        overflow: "hidden",
         display: "flex",
         flexWrap: "wrap",
-        userSelect: "none"
+        userSelect: "none",
+        [theme.breakpoints.down("sm")]: {
+            width: "100%"
+        },
     },
     smallImage: {
         "&:not(:first-of-type)": {
-            padding: "10 10px",
+            paddingTop: "10 10px",
             // margin: "10px",
             // marginLeft: "0"
         },
         width: "25%",
         // flex: "1 1 115px",
-        height: "120px",
+        // height: "100%",
+        height: "100px",
         objectFit: "cover",
         paddingRight: "0px",
         // margin: "10px"
@@ -28,7 +34,7 @@ const useStyles = makeStyles({
     },
     rightIcon: {
         position: "absolute",
-        top: "40%",
+        top: "35%",
         right: "10px",
         fontSize: "24px",
         color: "#000",
@@ -43,7 +49,7 @@ const useStyles = makeStyles({
         cursor: "pointer"
     }
 
-})
+}))
 
 export const Carousel = (props) => {
     const classes = useStyles()
