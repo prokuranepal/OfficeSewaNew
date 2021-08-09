@@ -9,6 +9,7 @@ import Register from '../pages/Register'
 import ProductOverview from '../components/shared/ProductOverview';
 import ForgotPassword from '../pages/ForgotPassword/';
 import ProductDetails from '../components/shared/ProductDetails'
+import { FooterEye } from '../components/shared/FooterEye';
 export default function Home() {
   return (
     <div >
@@ -18,7 +19,8 @@ export default function Home() {
       {/* <Login /> */}
       {/* <ChangePassword /> */}
       {/* <ProductOverview /> */}
-      <ProductDetails />
+      {/* <ProductDetails /> */}
+      <FooterEye />
       {/* <p className="header">hello</p> */}
     </div >
   )
