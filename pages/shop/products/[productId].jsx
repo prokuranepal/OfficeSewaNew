@@ -6,6 +6,7 @@ import WidgetShopBrands from '../../../components/shared/Widgets/WidgetShopBrand
 import WidgetShopFilterByPriceRange from '../../../components/shared/Widgets/WidgetShopFilterByPriceRange';
 // import ProductRepository from '~/repositories/ProductRepository';
 import { useRouter } from 'next/router';
+import HomeLayout from '../../../components/layouts/HomeLayout';
 import MegaMenu from '../../../components/menu/MegaMenu';
 import {menuCat} from '../../../public/static/data/category';
 import {makeStyles} from "@material-ui/core/styles";
@@ -13,6 +14,7 @@ import SimpleProduct from '../../../components/elements/Product/SimpleProduct';
 import Grid from '@material-ui/core/Grid';
 import Head from '../../../components/layouts/modules/Head';
 import ModuleShopSortBy from '../../../components/partials/Shop/modules/ModuleShopSortBy';
+
 
 // import ProductItems from '~/components/partials/product/ProductItems';
 const product=[
@@ -28,7 +30,6 @@ const ProductCategoryScreen = () => {
     const {productId}= Router.query;
     const classes = useStyles();
 
-    console.log(Router.query, 'query', productId)
     const [category, setCategory] = useState(productId);
     const [loading, setLoading] = useState(false);
 
@@ -92,7 +93,8 @@ const ProductCategoryScreen = () => {
         //     boxed={true}>
            <>
            <Head/>
-            <MegaMenu menuCat={menuCat}/> 
+           <HomeLayout>
+            {/* <MegaMenu menuCat={menuCat}/>  */}
             <BreadCrumb breadcrumb={breadCrumb} />
                             {/* <WidgetShopFilterByPriceRange /> */}
 
@@ -135,8 +137,9 @@ const ProductCategoryScreen = () => {
                         </div>
                     </div>
                 </div>
+                </HomeLayout>
             </>
-        // </ContainerShop>
+    
     );
 };
 

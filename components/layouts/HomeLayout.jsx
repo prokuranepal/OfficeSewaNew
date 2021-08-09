@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import Topbar from '../shared/Header/Topbar';
 import Footer from '../shared/Footer';
-
+import MegaMenu from '../menu/MegaMenu';
+import {menuCat} from '../../public/static/data/category';
 import styles from '../../styles/Home.module.css'
 
 const HomeLayout = (props) => {
@@ -12,6 +13,8 @@ const HomeLayout = (props) => {
             <div>
                 <Topbar />
             </div>
+            <MegaMenu menuCat={menuCat}/>
+
             {/* <p>hello</p> */}
             <div className={classes.container}>
                 {props.children}

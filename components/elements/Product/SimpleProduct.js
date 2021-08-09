@@ -14,7 +14,6 @@ import ModuleProductActions from './ModuleProductActions';
 
 const Product = ({ product }) => {
     // Views
-    console.log(product,'product')
     const priceView = ProductPrice(product);
     const thumbnailImage = ProductThumbnail(product);
     // const badgeView = ProductBadge(product);

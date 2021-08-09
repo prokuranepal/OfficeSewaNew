@@ -16,6 +16,7 @@ import DefaultHomeBanner from '../components/partials/HomePage/DefaultHomeBanner
 // import ProductGroupWithCarousel from '../components/partials/Product/ProductGroupWithCarousel';
 import HomeDefaultProductListing from '../components/partials/HomePage/HomeDefaultProductListing';
 import Footer from '../components/shared/Footer';
+import HomeLayout from '../components/layouts/HomeLayout';
 
 
 export default function Home() {
@@ -33,12 +34,11 @@ export default function Home() {
   
   return (
     <div>
-      <Topbar />
+      
      
       
        <Head/>
-     
-        <MegaMenu menuCat={menuCat}/>
+        <HomeLayout>     
         <DefaultHomeBanner />
         <SiteFeatures/>
          <div style={{marginLeft:20, marginBottom:30}}>
@@ -48,7 +48,7 @@ export default function Home() {
          <div style={{marginLeft:20}}>
          <HomeDefaultProductListing title="Furniture"/> 
          </div>
-      <Footer/>
+         </HomeLayout>
     </div>
     // <div >
     //   {/* <Topbar /> */}

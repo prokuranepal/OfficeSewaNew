@@ -14,7 +14,6 @@ const categoryPage = (props) => {
     const classes = useStyles();
     const router = useRouter() 
     const type_new = router.query;
-    console.log('category', type_new.categoryId);
     let catName=type_new.categoryId;
     let catNameTitle = catName?catName.toUpperCase():null;
     let categoryArray= catName?categoryData.menuPrimary.menu_1.filter(item=>item.text.toUpperCase()==catNameTitle):null;
@@ -29,9 +28,9 @@ const categoryPage = (props) => {
     ];
     let catItems;
     return (
-        // <HomeLayout>
-        <>
-            <MegaMenu menuCat={menuCat}/> 
+        <HomeLayout>
+    
+            {/* <MegaMenu menuCat={menuCat}/>  */}
             <Breadcrumb breadcrumb={breadcrumb} />
             <div style={{padding:'20px 20px 20px 50px', 'background-color':'white'}}>
             <div style={{'font-size':18, 'color':'#1961a5', 'font-weight':'bold', 'padding-bottom':10}}>
@@ -47,7 +46,6 @@ const categoryPage = (props) => {
                     <>
                     {
                   value1.megaItems?value1.megaItems.map(value=>{
-                    console.log("type of router ", value)
 
                       return(
                           <CategoryCard value={value} />
@@ -63,8 +61,8 @@ const categoryPage = (props) => {
       {/* </Grid> */}
       </div>
 
-        {/*  </HomeLayout> */}
-        </>
+         </HomeLayout>
+        // </>
     )
 };
 

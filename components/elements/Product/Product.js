@@ -13,7 +13,6 @@ import { makeStyles } from "@material-ui/core/styles"
 import ModuleProductActions from './ModuleProductActions';
 
 const Product = ({ product }) => {
-    console.log(product,'product')
     const priceView = ProductPrice(product);
     const thumbnailImage = ProductThumbnail(product);
     const classes = useStyles();
