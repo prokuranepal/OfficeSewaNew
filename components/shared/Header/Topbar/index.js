@@ -46,63 +46,63 @@ const Topbar = (props) => {
 
     const classes = useStyles();
     return (
-        <Grid container className={classes.root}>
-            <Grid item className={classes.topItem} xs={12} sm={4} md={3}>
-                <div className={showDepartments ? classes.visible : classes.invisible}>
-                    {/* <MenuDropDown /> */}
-                </div>
-                <div className={showDepartments ? classes.invisible : classes.visible}>
-                    <img
+        <div className={classes.root}>
+            <Grid container >
+                <Grid item className={classes.topItem} xs={12} sm={4} md={3}>
+                    <div className={showDepartments ? classes.invisible : classes.visible}>
+                        <img
 
-                        alt="OfficeSewas"
-                        width={150}
-                        // height={50}
-                        src={'images/logo.png'}
-                    />
-                </div>
-            </Grid>
-            <Grid item className={classes.topItem} xs={12} sm={4} md={6}>Search</Grid>
-            <Grid item className={classes.actionIcons} xs={12} sm={4} md={3}>
-                <Link href={'#'}>
-                    <div className={classes.iconContainer}>
-                        <BarChartOutlined className={classes.icons} />
-                        <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
+                            alt="OfficeSewas"
+                            width={150}
+                            // height={50}
+                            src={'images/logo.png'}
+                        />
                     </div>
-                </Link>
-                <Link href={'/shipping'}>
-                    <div className={classes.iconContainer}>
-                        <HeartOutlined className={classes.icons} />
-                        <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
+                    <div className={showDepartments ? classes.visible : classes.invisible}>
+                        <MenuDropDown />
                     </div>
-                </Link>
-                {/* <Link href={'#'}> */}
-                <div className={classes.iconContainer} onMouseOver={showMiniCartFunc} onMouseLeave={hideMiniCartFunc}>
-                    <ShoppingCartOutlined className={classes.icons} />
-                    <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
-                    {/* <Grow in={showMiniCart?true:false} style={{ transformOrigin: '0 0 0' }}
-                        {...(showMiniCart ? { timeout: 1000 } : {})}> */}
-                        <div className={showMiniCart?classes.visible:classes.invisible}>
-                        <MiniCart showMiniCart={showMiniCart} />
+                </Grid>
+                <Grid item className={classes.topItem} xs={12} sm={4} md={6}>Search</Grid>
+                <Grid item className={classes.actionIcons} xs={12} sm={4} md={3}>
+                    <Link href={'#'}>
+                        <div className={classes.iconContainer}>
+                            <BarChartOutlined className={classes.icons} />
+                            <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
                         </div>
-                    {/* </Grow> */}
-                </div>
-                {/* </Link> */}
+                    </Link>
+                    <Link href={'#'}>
+                        <div className={classes.iconContainer}>
+                            <HeartOutlined className={classes.icons} />
+                            <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
+                        </div>
+                    </Link>
 
-                <div className={classes.account}>
-                    <div className={classes.iconContainer}>
-                    <Link href={'/login'}>
-                        Login
+                    <div className={classes.iconContainer} onMouseOver={showMiniCartFunc} onMouseLeave={hideMiniCartFunc}>
+                        <Link href={'#'}>
+                            <div >
+                                <ShoppingCartOutlined className={classes.icons} />
+                                <span className={classes.itemNumber}><i className={classes.itemNumberText}>0</i></span>
+                            </div>
                         </Link>
-                        {/* <UserOutlined className={classes.icons} /> */}
-                    </div>
-                    {/* <div className={classes.accountLinks}>
-                        <div>Login</div>
-                        <div>Register</div>
-                    </div> */}
-                </div>
+                        <div className={showMiniCart ? classes.visible : classes.invisible}>
+                            <MiniCart showMiniCart={showMiniCart} />
+                        </div>
 
+                    </div>
+
+
+                    <div className={classes.account}>
+                        <div className={classes.iconContainer}>
+                            <Link href={'/login'}>
+                                Login
+                        </Link>
+                            {/* <UserOutlined className={classes.icons} /> */}
+                        </div>
+                    </div>
+
+                </Grid>
             </Grid>
-        </Grid>
+        </div>
 
     )
 };
@@ -110,8 +110,10 @@ const Topbar = (props) => {
 const useStyles = makeStyles({
     root: {
         width: '100%',
-        // position: 'absolute',
-        // top: 0,
+        display: 'block',
+        position: 'relative',
+        top: 0,
+        zIndex: 100
         // flex: 1
     },
     topItem: {
@@ -187,7 +189,7 @@ const useStyles = makeStyles({
         transition: 'all 2s ease',
     },
     login: {
-        
+
     }
 }, { name: "MuiComponent" });
 

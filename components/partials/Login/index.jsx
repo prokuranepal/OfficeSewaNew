@@ -16,8 +16,8 @@ import { SubHeaderText } from '../../../components/HeaderText/index';
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        height: "60vh",
-        width: "100vw",
+        // height: "60vh",
+        // width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",

@@ -1,17 +1,21 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { colors } from '../../../theme/colors';
+import Link from '@material-ui/core/Link';
+import LinkButton from '../LinkButton';
 const CustomButton = (props) => {
-    const classes = useStyles();
+    const classes = useStyles(props);
     return (
-        <button className={classes.root} style={props.style}>
+        <Link href={props.url}>
+        <button className={classes.root} style={props.style} onClick={props.onClick}>
             {props.title}
         </button>
+        </Link>
     )
 };
 
 const useStyles = makeStyles({
-    root: {
+    root: props => ({
         display: 'inline-block',
         padding: '10px 20px',
         fontSize: '16px',
@@ -21,15 +25,15 @@ const useStyles = makeStyles({
         border: 'none',
         fontWeight: 600,
         borderRadius: '4px',
-        backgroundColor: colors.primary,
+        backgroundColor: props.primary?colors.primary:colors.secondary,
         transition: 'all 0.4s ease',
         cursor: 'pointer',
         
         '&:hover': {
-            backgroundColor: colors.secondary
+            backgroundColor: props.primary?colors.secondary:colors.primary
         }
-    },
+    }),
 
-}, { name: 'CustomButton' });
+});
 
 export default CustomButton;

@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/styles';
 import LazyLoad from 'react-lazyload';
 import Link from 'next/link';
 import { colors } from '../../../theme/colors';
-const ProductOnCart = (props) => {
+
+const ProductCart = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -24,19 +25,15 @@ const ProductOnCart = (props) => {
 const useStyles = makeStyles({
     root: {
         display: 'flex',
-        // flexFlow: 'row nowrap',
-        margin: '0px 0px 20px',
+        flexFlow: 'row nowrap',
+        margin: '10px 0px',
         flexDirection: 'row',
-        alignItems: 'center',
-        padding: '10px 0px'
+        alignItems: 'center'
+        // padding: '5px 10px'
     },
     content: {
         position: 'relative',
-        padding: '10px',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
-
+        padding: '10px'
     },
     image: {
         // height: '100px',
@@ -48,7 +45,7 @@ const useStyles = makeStyles({
         padding: '0 0 5px',
         fontSize: '14px',
         lineHeight: '1.2em',
-        color: colors.primary,
+        color: '#06c',
         // --max-lines: 2;
         // max-height: calc(1.2em * var(--max-lines));
         overflow: 'hidden',
@@ -58,6 +55,6 @@ const useStyles = makeStyles({
             color: colors.primary
         }
     }
-}, { name: "ProductOnCart" });
+});
 
-export default ProductOnCart;
+export default ProductCart;

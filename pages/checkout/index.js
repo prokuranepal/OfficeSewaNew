@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/styles';
 import HomeLayout from '../../components/layouts/HomeLayout';
 import Breadcrumb from '../../components/elements/BreadCrumb';
 import HeaderText from '../../components/elements/HeaderText';
-import Shipping from '../../components/partials/Shipping';
+import Checkout from '../../components/partials/Checkout';
 
-const ShippingPage = (props) => {
+const CheckoutPage = (props) => {
     const classes = useStyles();
     const breadcrumb = [
         {
@@ -15,19 +15,15 @@ const ShippingPage = (props) => {
         },
         {
             text: 'Shopping Cart',
-            url: '/shoppingcart'
         },
-        {
-            text: 'Shipping'
-        }
     ];
     return (
         <HomeLayout>
             <Breadcrumb breadcrumb={breadcrumb} />
             <div className={classes.container}>
-                <HeaderText title={'Shipping and Billing Information'} />
+                <HeaderText title={'ShoppingCart'} />
             </div>
-            <Shipping/>
+            <Checkout/>
             
 
         </HomeLayout>
@@ -38,7 +34,6 @@ const useStyles = makeStyles({
     container: {
         marginLeft: '60px'
     },
-    
 });
 
-export default ShippingPage;
+export default CheckoutPage;
