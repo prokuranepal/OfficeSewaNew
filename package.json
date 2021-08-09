@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev  -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,19 +14,21 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "@zeit/next-sass": "^1.0.1",
-    "antd": "^4.16.8",
+    "antd": "^4.16.11",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.13.2",
     "babel-preset-next": "^1.4.0",
+    "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "node-sass": "4.14.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-lazyload": "^3.2.0",
-    "react-icons": "^4.2.0",
-    "axios": "^0.21.1",
-    "framer-motion": "^4.1.17",
     "react-click-outside-hook": "^1.1.1",
-    "react-spinners": "^0.11.0"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-lazyload": "^3.2.0",
+    "react-slick": "^0.28.1",
+    "react-spinners": "^0.11.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "7.31.0",

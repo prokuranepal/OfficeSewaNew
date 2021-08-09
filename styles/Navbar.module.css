@@ -1,0 +1,197 @@
+
+.navbarContainer{
+    width: "100vw";
+    background-color: #1961a5;
+    display: flex;
+    padding-left:50px;
+}
+.navbarContainer >li > ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        color:black;
+    }
+
+ .navbarContainer > li {
+        padding: 0 20px;
+ }
+.navbarContainer >li > a {
+            padding: 0px 0px;
+            color: white;
+}
+.divcontainer {
+    position:relative;
+    padding: 0px 10px;
+}
+
+.heading{
+        color:#fff; 
+        height:100%;
+        font-family:Work Sans, sans-serif;
+        font-size: 14px;
+        list-style-type: none;        
+}
+
+ /* > .divcontainer >  */
+.navbarContainer .heading{
+    padding:15px 0px;
+}
+/* >div >li > */
+.navbarContainer>div >li > a::after{ 
+    content: '\e93a';
+    font: normal normal normal 12px/1 linearicons;
+    padding: 0px 10px 0px 7px;
+    color: white;
+
+
+}
+/* >div >li > */
+.navbarContainer >div >li >  a::before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    background-color: white;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    z-index: 10000;
+                    border-left: 1px solid #ccc;
+                    border-top: 1px solid #ccc;
+                    transform:rotate(45deg) translate(-50%, 0%);
+                    transition: all 0.25s ease;
+                    /* border: 1px solid #ccc; */
+
+                    /* transform:(translateY(-50%)); */
+                    /* @include transform-origin(0 0); */
+                    /* @include hidden; //triangle for dropdown */ 
+
+                    visibility: invisible;
+                    opacity:0;
+                }
+
+.heading:hover{
+    cursor: pointer;  
+
+}
+
+.heading:hover > .submenu{
+    visibility:visible;
+    opacity:1;
+}
+/* .navbarContainer >div >li > */
+.heading:hover  a:before {
+    visibility:visible;
+    opacity:1;
+}
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    color:blue;
+    visibility: hidden;
+    background-color:#fff; 
+    opacity:0;
+    z-index:1000;
+    transform: translateY(-14px);
+    border: 1px solid #ccc;
+    transition: all 0.25s ease;
+    border-radius: 2px;
+    padding: 10px 0px 10px 15px;
+}
+.submenu >.divcontainer >.heading{
+    color:#000;
+    padding: 10px 0px;
+    font-size: 13px;
+}
+.submenu >.divcontainer >.heading:hover{
+    color: #1961a5;
+}
+
+.subMenuContainer{
+    position: absolute;
+    background-color:white; 
+    min-width: 240px;
+    visibility: hidden;
+    display:flex;
+    z-index:1000;
+    flex-flow: row nowrap;
+    /* padding: 15px 30px 10px; */
+    background-color: #fff;
+    top: 100%;
+    /* width: 100%; */
+    width: auto;
+    opacity: 0;
+    border: 1px solid #ccc;
+    transition: all 0.25s ease;
+    border-radius: 3px;
+    padding:20px 15px 0px 25px ;
+    /* padding: 10px 0px 10px 15px; */
+}
+
+/* .subMenuContainer > *{
+    width:100%;
+} */
+
+.catContainer {
+    list-style-type: none;         
+        /* display:inline-block;  */
+        padding:15px 0px; /* navbar height */
+        height:100%;
+        width:100%;
+        /* background-color: green; */
+       
+}
+
+.catContainer>a{
+    color:#fff; 
+    font-family:Work Sans, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration:none;
+}
+
+.catContainer > a:hover{
+    cursor: pointer;
+}
+.catContainer:hover a:before {
+    visibility:visible;
+    opacity:1;
+}
+.catContainer:hover .subMenuContainer{
+    visibility: visible;
+    opacity: 1;
+}
+
+.subItemStyle{
+    list-style-type: none;
+    padding: 0px 0px 10px 0px;
+}
+.subItemStyle>a{
+    font-family:Work Sans, sans-serif;
+    color:black;
+    font-size: 14px;
+    text-decoration:none;
+}
+.subItemStyle:hover >a{
+    color: #1961a5;
+    cursor: pointer;
+}
+.subHeadStyle{
+    color:black;
+    font-family:Work Sans, sans-serif;
+    font-size: 14px;
+    width:100%;
+    flex-flow: row nowrap;
+    font-weight: bold;
+}
+
+
+
+.breadcrumbContainer{
+    position: absolute;
+    left:0;
+    /* top:100%; */
+    background-color:#f1f1f1;
+    width:100%;
+}
