@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from "@material-ui/core/styles"
-import Head from '../layouts/modules/Head'
+import { makeStyles } from "@material-ui/core/styles";
+import Head from '../../../layouts/modules/Head';
 
 const SiteFeatures = () => {
     const classes = useStyles()

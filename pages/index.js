@@ -14,8 +14,8 @@ import Head from '../components/layouts/modules/Head';
 
 
 import {menuCat} from '../public/static/data/category';
-import SiteFeatures from '../components/SiteFeatures';
-import DefaultHomeBanner from '../components/DefaultHomeBanner';
+import SiteFeatures from '../components/partials/HomePage/SiteFeatures';
+import DefaultHomeBanner from '../components/partials/HomePage/DefaultHomeBanner';
 // import Product from '../components/elements/Product/Product';
 import ProductOnCart from '../components/elements/Product/ProductOnCart';
 import ProductGroupWithCarousel from '../components/partials/Product/ProductGroupWithCarousel';

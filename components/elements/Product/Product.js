@@ -7,17 +7,15 @@ import {
     ProductBadge,
     ProductPrice,
     ProductThumbnail,
-} from '../../ProductThumbnail';
+} from '../../helpers/ProductThumbnail';
 import { makeStyles } from "@material-ui/core/styles"
 
 import ModuleProductActions from './ModuleProductActions';
 
 const Product = ({ product }) => {
-    // Views
     console.log(product,'product')
     const priceView = ProductPrice(product);
     const thumbnailImage = ProductThumbnail(product);
-    // const badgeView = ProductBadge(product);
     const classes = useStyles();
 
     return (
@@ -62,28 +60,17 @@ const useStyles = makeStyles(theme => ({
         marginLeft:0,
         minWidth:100,
         maxWidth:250,
-        // height:350,
         display:'block', 
         'align-items':'center', 
         justifyContent:'center',
-        // backgroundColor:'green',
         padding:10,
         overflow:'hidden',
          '&  > $thumbnail':{
                  position: 'relative',
-                 '& img':{
-     
-           
-        //    height:'100%',
-        
-       },
             '& > ul':{
                   position: 'absolute',
-            bottom: 0,
-            // left: '50%',
-                transform:'translate(0, 100%)',
-        // 'background-color': 'red',
-
+                  bottom: 0,
+                  transform:'translate(0, 100%)',
             }
             },
         '&:hover':{
@@ -93,25 +80,18 @@ const useStyles = makeStyles(theme => ({
             '& > ul':{
                   position: 'absolute',
             bottom: 0,
-            // left: '50%',
                 transform:'translate(0, 0)',
-        // 'background-color': 'red',
-
             }
             }
            
         }
     },
    thumbnail:{
-    //    height:250,
-    //    width:250,
             overflow: 'hidden',
 
     marginBottom:5,
        '& img':{
            width:'100%',
-           
-        //    height:'100%',
            'object-fit':'contain'
        },
       

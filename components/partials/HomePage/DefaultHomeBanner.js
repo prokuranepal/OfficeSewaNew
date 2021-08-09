@@ -1,17 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {makeStyles} from "@material-ui/core/styles";
-import NextArrow from '../elements/Carousel/NextArrow';
-import PrevArrow from '../elements/Carousel/PrevArrow';
+import NextArrow from '../../elements/Carousel/NextArrow';
+import PrevArrow from '../../elements/Carousel/PrevArrow';
 import Link from 'next/link';
-import {SliderData} from '../../public/static/data/category'
-import Promotion from '../elements/Media/Promotion';
+import {SliderData} from '../../../public/static/data/category'
+import Promotion from '../../elements/Media/Promotion';
 import LazyLoad from 'react-lazyload';
 
-// import Link from 'next/link'; import MediaRepository from
-// '~/repositories/MediaRepository'; import { baseUrl } from
-// '~/repositories/Repository'; import { getItemBySlug } from
-// '~/utilities/product-helper'; import Promotion from
-// '~/components/elements/media/Promotion';
 
 const DefaultHomeBanner = () => {
     const [current,
@@ -39,10 +34,7 @@ const DefaultHomeBanner = () => {
         <div className={classes.container}>
             <div className={classes.slider}>
                 <PrevArrow onClick={prevSlide}/>
-
-                <NextArrow onClick={nextSlide}/> {/* <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-    <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} /> */}
-
+                <NextArrow onClick={nextSlide}/> 
                 {SliderData.map((slide, index) => {
                     return (
                         <div
@@ -65,12 +57,7 @@ const DefaultHomeBanner = () => {
                 })}
             </div>
             <div
-                style={{
-                width: '35%',
-                'min-width': '400px',
-                'box-sizing': 'border-box',
-                'padding-left': '25px'
-            }}>
+                className={classes.promotionContainer}>
                 <Promotion
                     link="/shop"
                     image={'https://beta.apinouthemes.com/uploads/promotion_1_d6deb591f0.jpeg'}/>
@@ -84,15 +71,12 @@ const DefaultHomeBanner = () => {
 }
 
 export default DefaultHomeBanner;
-/*connect(state => state.media)();*/
 
 const useStyles = makeStyles(theme => ({
     slider: {
         position: 'relative',
         width: '65%',
-        // 'max-width':'100%', 'padding-right':'25px',
         'height': '100%',
-        // 'background-color':'green',
         'min-height': '100%'
     },
     container: {
@@ -103,7 +87,6 @@ const useStyles = makeStyles(theme => ({
     },
     image: {
         width: '100%',
-        // height:'100%', 'max-width':'1'
         'min-height': '420px',
         'max-height': '420px',
         objectFit: 'cover'
@@ -111,7 +94,6 @@ const useStyles = makeStyles(theme => ({
     },
 
     rightArrow: {
-        // position: 'absolute',
         top: '50%',
         right: '32px',
         'font-size': '3rem',
@@ -122,7 +104,6 @@ const useStyles = makeStyles(theme => ({
     },
 
     leftArrow: {
-        // position: 'absolute',
         top: '50%',
         left: '32px',
         'font-size': '3rem',
@@ -139,7 +120,12 @@ const useStyles = makeStyles(theme => ({
     activeSlide: {
         opacity: 1,
         'transition-duration': '1.5s',
-        // transform: 'scale(1.08)'
+    },
+    promotionContainer:{
+        width: '35%',
+        'min-width': '400px',
+        'box-sizing': 'border-box',
+        'padding-left': '25px'
     }
 
 }))

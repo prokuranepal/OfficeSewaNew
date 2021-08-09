@@ -7,7 +7,7 @@ import {
     ProductBadge,
     ProductPrice,
     ProductThumbnail,
-} from '../../ProductThumbnail';
+} from '../../helpers/ProductThumbnail';
 import { makeStyles } from "@material-ui/core/styles"
 
 import ModuleProductActions from './ModuleProductActions';
