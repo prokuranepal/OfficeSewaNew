@@ -29,27 +29,36 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "20px"
+        padding: "20px",
+        [theme.breakpoints.down("sm")]: {
+            flexDirection: "column",
+            width: "100%",
+
+        }
     },
     subscriptionTextContainer: {
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        [theme.breakpoints.down("sm")]: {
+            alignItems: "center"
+        }
     },
     subscriptiontext: {
         color: "#0D0D0D",
         fontSize: "24px",
         fontWeight: "500",
         paddingRight: "40px",
-        lineHeight: "28px"
+        lineHeight: "28px",
+        paddingLeft: "10px"
     },
     giftIcon: {
         fontSize: "44px",
-        paddingRight: "10px",
-        marginBottom: "7px"
+        // paddingRight: "10px",
+        // marginBottom: "7px"
 
     },
     inputContainer: {
-        width: "400px",
+        width: "20vw",
         paddingRight: "20px",
         color: "#4A4A4A",
         '& input': {
@@ -66,10 +75,15 @@ const useStyles = makeStyles(theme => ({
         '& .MuiOutlinedInput-root': {
             background: "#fff",
             borderRadius: "50px"
-        }
+        },
         // '&::placeholder':{
 
         // }
+        [theme.breakpoints.down("sm")]: {
+            margin: "20px 0",
+            width: "90vw",
+            padding: "0"
+        }
     },
     envolopIcon: {
         fontSize: "24px"
@@ -88,16 +102,22 @@ const useStyles = makeStyles(theme => ({
     info: {
         width: "100%",
         margin: "30px 0",
-        minHeight: "200px",
+        // minHeight: "200px",
+        paddingBottom: "40px",
         background: "#fff",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         '&>*': {
-            flex: "1"
+            flex: "1",
+        },
+        [theme.breakpoints.down("sm")]: {
+            flexDirection: "column"
         }
     },
     infoBox: {
+        paddingTop: "40px ",
+
         textAlign: "center"
     },
     infoBoxContainer: {
@@ -131,8 +151,13 @@ const useStyles = makeStyles(theme => ({
         paddingTop: "20px",
         paddingBottom: "30px",
         // padding: " 0 30px ",
-        borderBottom: "2px solid #09651A"
-
+        borderBottom: "2px solid #09651A",
+        [theme.breakpoints.down("sm")]: {
+            gridTemplateColumns: "1fr 1fr"
+        },
+        [theme.breakpoints.down("xs")]: {
+            gridTemplateColumns: "1fr"
+        }
     },
     footerMainText: {
         fontSize: "16px",
@@ -172,11 +197,18 @@ const useStyles = makeStyles(theme => ({
         paddingTop: "20px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        [theme.breakpoints.down("sm")]: {
+            flexDirection: "column"
+        }
     },
     socials: {
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        [theme.breakpoints.down("sm")]: {
+            paddingBottom: "20px"
+        }
+
     },
     socialText: {
         fontSize: "16px",
@@ -198,7 +230,7 @@ const useStyles = makeStyles(theme => ({
     }
 
 }))
-export const FooterEye = () => {
+const FooterEye = () => {
     const classes = useStyles()
     return (
         <div className={classes.main}>
@@ -232,6 +264,14 @@ export const FooterEye = () => {
                     </div>
                 </div>
                 <div className={classes.info}>
+                    {/* <div className={classes.infoBox}>
+                        <div className={classes.infoBoxContainer}>
+                            <BiPhone className={classes.infoIcon} />
+                            <Typography className={classes.infoHeaderText} variant="span">Phone Number</Typography>
+                        </div>
+                        <Typography className={classes.infoSubHeaderText} variant="h5">980253697</Typography>
+
+                    </div> */}
                     <div className={classes.infoBox}>
                         <div className={classes.infoBoxContainer}>
                             <BiPhone className={classes.infoIcon} />
@@ -342,3 +382,4 @@ export const FooterEye = () => {
         </div>
     )
 }
+export default FooterEye

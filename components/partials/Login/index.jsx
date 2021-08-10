@@ -286,7 +286,7 @@ const Login = () => {
                         </Typography>
                         <div className={classes.line}></div>
                         <Typography className={classes.options} variant="h5">Or, login with:</Typography>
-                        <Grid container spacing={6} className={classes.socialContainer}>
+                        <Grid container className={classes.socialContainer}>
                             <Grid items xs={12} md={6} className={classes.primaryButtonContainer} >
                                 <Button variant="contained" className={`${classes.socialButton}  ${classes.primaryButton}`}  >
                                     <SiFacebook className={`${classes.icon} ${classes.facebook}`} />

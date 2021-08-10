@@ -17,6 +17,8 @@ import DefaultHomeBanner from '../components/partials/HomePage/DefaultHomeBanner
 import HomeDefaultProductListing from '../components/partials/HomePage/HomeDefaultProductListing';
 import Footer from '../components/shared/Footer';
 import HomeLayout from '../components/layouts/HomeLayout';
+import FooterEye from '../components/shared/FooterEye'
+import ProductDetails from '../components/shared/ProductDetails';
 
 
 export default function Home() {
@@ -33,23 +35,25 @@ export default function Home() {
 
 
   return (
-    <div>
+    // <div>
 
 
 
-      <Head />
-      <HomeLayout>
-        <DefaultHomeBanner />
-        <SiteFeatures />
-        <div style={{ marginLeft: 20, marginBottom: 30 }}>
-          <HomeDefaultProductListing title="Stationery" />
-        </div>
+    //   <Head />
+    //   <HomeLayout>
+    //     <DefaultHomeBanner />
+    //     <SiteFeatures />
+    //     <div style={{ marginLeft: 20, marginBottom: 30 }}>
+    //       <HomeDefaultProductListing title="Stationery" />
+    //     </div>
 
-        <div style={{ marginLeft: 20 }}>
-          <HomeDefaultProductListing title="Furniture" />
-        </div>
-      </HomeLayout>
-    </div>
+    //     <div style={{ marginLeft: 20 }}>
+    //       <HomeDefaultProductListing title="Furniture" />
+    //     </div>
+    //   </HomeLayout>
+    // </div>
+    <ProductDetails />
+    // <FooterEye />
     // <div >
     //   {/* <Topbar /> */}
     //   {/* <Register /> */}

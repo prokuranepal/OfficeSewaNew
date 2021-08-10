@@ -207,6 +207,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "20px",
         fontWeight: "600",
         lineHeight: "23px",
+        cursor: "pointer",
+        userSelect: "none",
 
         "&:not(:first-of-type)": {
             padding: "0 10px",
@@ -215,6 +217,8 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "20px",
             fontWeight: "600",
             lineHeight: "23px",
+            cursor: "pointer",
+
             [theme.breakpoints.down('sm')]: {
 
 
@@ -386,6 +390,10 @@ export const ProductDetails = (props) => {
     const [open, setOpen] = useState(true)
     const [startIndex, setStartIndex] = useState(0)
     const [endIndex, setEndIndex] = useState(4)
+    const [description, setDescription] = useState(false)
+    const [specifications, setSpecifiacations] = useState(false)
+    const [vendor, setVendor] = useState(false)
+    const [review, setReview] = useState(true)
     const [imgSrc, setImgSrc] = useState(carouselData[0].imgSrc)
     // const data = carouselData.length = index
     const [carousel, setCarouselData] = useState(carouselData.slice(startIndex, endIndex))
@@ -427,6 +435,35 @@ export const ProductDetails = (props) => {
     console.log(carousel, "newCarousel")
     const handleClose = () => {
         setOpen(false)
+    }
+    const onClickHandler = (name) => {
+        if (name === "descriptions") {
+            setDescription(true)
+            setReview(false)
+            setVendor(false)
+            setSpecifiacations(false)
+        }
+        if (name === "specifications") {
+            setDescription(false)
+            setReview(false)
+            setVendor(false)
+            setSpecifiacations(true)
+
+        }
+        if (name === "vendor") {
+            setDescription(false)
+            setReview(false)
+            setVendor(true)
+            setSpecifiacations(false)
+
+        }
+        if (name === "review") {
+            setDescription(false)
+            setReview(true)
+            setVendor(false)
+            setSpecifiacations(false)
+
+        }
     }
     return (
         <>
@@ -488,71 +525,81 @@ export const ProductDetails = (props) => {
                     </div>
                     <div className={classes.productDetails}>
                         <ul className={classes.productDetailsContainer}>
-                            <li className={classes.detailsText}>Descriptions</li>
-                            <li className={classes.detailsText}>Specifications</li>
-                            <li className={classes.detailsText}>Vendor</li>
-                            <li className={`${classes.detailsText} ${classes.activeDetailsText}`}>Review</li>
+                            <li className={`${classes.detailsText}  ${description ? classes.activeDetailsText : "null"}`}
+                                onClick={() => onClickHandler("descriptions")}>Descriptions
+                            </li>
+                            <li className={`${classes.detailsText}  ${specifications ? classes.activeDetailsText : "null"}`}
+                                onClick={() => onClickHandler("specifications")}>Specifications
+                            </li>
+                            <li className={`${classes.detailsText}  ${vendor ? classes.activeDetailsText : "null"}`}
+                                onClick={() => onClickHandler("vendor")}>Vendor
+                            </li>
+                            <li className={`${classes.detailsText}  ${review ? classes.activeDetailsText : "null"}`}
+                                onClick={() => onClickHandler("review")}>Review
+                            </li>
 
                         </ul>
-                        <Grid container>
-                            <Grid item xs={12} md={3} className={classes.review}>
-                                <Typography variant="h4" className={classes.price}>4.00</Typography>
-                                <BsFillStarFill className={classes.star} />
-                                <Typography variant="span" className={classes.totalReviews}>1 Review</Typography>
-                                <div className={classes.reviews}>
-                                    <div className={classes.reviewContainer}>
-                                        <Typography variant="span" className={classes.reviewText}>5 star</Typography>
-                                        <div className={classes.reviewBar}></div>
-                                        <Typography variant="span" className={classes.reviewText}>100%</Typography>
-                                    </div>
-                                    <div className={classes.reviewContainer}>
-                                        <Typography variant="span" className={classes.reviewText}>5 star</Typography>
-                                        <div className={classes.reviewBar}></div>
-                                        <Typography variant="span" className={classes.reviewText}>100%</Typography>
-                                    </div>
-                                    <div className={classes.reviewContainer}>
-                                        <Typography variant="span" className={classes.reviewText}>5 star</Typography>
-                                        <div className={classes.reviewBar}></div>
-                                        <Typography variant="span" className={classes.reviewText}>100%</Typography>
-                                    </div>
-                                    <div className={classes.reviewContainer}>
-                                        <Typography variant="span" className={classes.reviewText}>5 star</Typography>
-                                        <div className={classes.reviewBar}></div>
-                                        <Typography variant="span" className={classes.reviewText}>100%</Typography>
-                                    </div>
-                                    <div className={classes.reviewContainer}>
-                                        <Typography variant="span" className={classes.reviewText}>5 star</Typography>
-                                        <div className={classes.reviewBar}></div>
-                                        <Typography variant="span" className={classes.reviewText}>100%</Typography>
-                                    </div>
-                                </div>
-                            </Grid>
-                            <Grid item xs={12} md={7} className={classes.review}>
-                                <div className={classes.emailContainer}>
-                                    <Typography variant="h4" className={classes.emailText}>Your email address will no be published.</Typography>
-                                    <div className={classes.ratingContainer}>
-                                        <Typography variant="h5" className={classes.ratingText}>Your rating of product</Typography>
-                                        <BsFillStarFill className={classes.singleStar} />
-                                        <BsFillStarFill className={classes.singleStar} />
-                                        <BsFillStarFill className={classes.singleStar} />
-                                        <BsFillStarFill className={classes.singleStar} />
-                                        <BsFillStarFill className={classes.singleStar} />
-                                    </div>
-                                    <div className={classes.formContainer}>
-                                        <TextareaAutosize className={classes.textArea} aria-label="minimum height" minRows={8} placeholder="Write your review" />
-                                        <div className={classes.inputFieldContainer}>
-                                            <TextField placeholder="Name" className={classes.inputField} variant="outlined" />
-                                            <TextField placeholder="Name" className={classes.inputField} variant="outlined" />
-
+                        {review ?
+                            <Grid container>
+                                <Grid item xs={12} md={3} className={classes.review}>
+                                    <Typography variant="h4" className={classes.price}>4.00</Typography>
+                                    <BsFillStarFill className={classes.star} />
+                                    <Typography variant="span" className={classes.totalReviews}>1 Review</Typography>
+                                    <div className={classes.reviews}>
+                                        <div className={classes.reviewContainer}>
+                                            <Typography variant="span" className={classes.reviewText}>5 star</Typography>
+                                            <div className={classes.reviewBar}></div>
+                                            <Typography variant="span" className={classes.reviewText}>100%</Typography>
                                         </div>
-                                        <Button variant="contained" className={classes.submitButton}>Submit Review</Button>
+                                        <div className={classes.reviewContainer}>
+                                            <Typography variant="span" className={classes.reviewText}>5 star</Typography>
+                                            <div className={classes.reviewBar}></div>
+                                            <Typography variant="span" className={classes.reviewText}>100%</Typography>
+                                        </div>
+                                        <div className={classes.reviewContainer}>
+                                            <Typography variant="span" className={classes.reviewText}>5 star</Typography>
+                                            <div className={classes.reviewBar}></div>
+                                            <Typography variant="span" className={classes.reviewText}>100%</Typography>
+                                        </div>
+                                        <div className={classes.reviewContainer}>
+                                            <Typography variant="span" className={classes.reviewText}>5 star</Typography>
+                                            <div className={classes.reviewBar}></div>
+                                            <Typography variant="span" className={classes.reviewText}>100%</Typography>
+                                        </div>
+                                        <div className={classes.reviewContainer}>
+                                            <Typography variant="span" className={classes.reviewText}>5 star</Typography>
+                                            <div className={classes.reviewBar}></div>
+                                            <Typography variant="span" className={classes.reviewText}>100%</Typography>
+                                        </div>
                                     </div>
-                                </div>
+                                </Grid>
+                                <Grid item xs={12} md={7} className={classes.review}>
+                                    <div className={classes.emailContainer}>
+                                        <Typography variant="h4" className={classes.emailText}>Your email address will no be published.</Typography>
+                                        <div className={classes.ratingContainer}>
+                                            <Typography variant="h5" className={classes.ratingText}>Your rating of product</Typography>
+                                            <BsFillStarFill className={classes.singleStar} />
+                                            <BsFillStarFill className={classes.singleStar} />
+                                            <BsFillStarFill className={classes.singleStar} />
+                                            <BsFillStarFill className={classes.singleStar} />
+                                            <BsFillStarFill className={classes.singleStar} />
+                                        </div>
+                                        <div className={classes.formContainer}>
+                                            <TextareaAutosize className={classes.textArea} aria-label="minimum height" minRows={8} placeholder="Write your review" />
+                                            <div className={classes.inputFieldContainer}>
+                                                <TextField placeholder="Name" className={classes.inputField} variant="outlined" />
+                                                <TextField placeholder="Name" className={classes.inputField} variant="outlined" />
 
+                                            </div>
+                                            <Button variant="contained" className={classes.submitButton}>Submit Review</Button>
+                                        </div>
+                                    </div>
+
+                                </Grid>
                             </Grid>
-                        </Grid>
-
+                            : ""}
                     </div>
+
                 </div>
 
             </Modal>
