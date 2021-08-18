@@ -19,17 +19,18 @@ const useStyles = makeStyles({
     },
 
 })
+// export const SubHeaderText = (props) => {
+//     const classes = makeStyles()
+//     return (
+//         <Typography variant="h4" className={classes.secondaryText}>{props.children}</Typography>
+
+//     )
+// }
 export const HeaderText = (props) => {
     const classes = useStyles()
     return (
         <Typography variant="span" className={classes.headerText}>{props.children}</Typography>
     )
 }
-export const SubHeaderText = (props) => {
-    const classes = makeStyles()
-    return (
-        <Typography variant="h4" className={classes.secondaryText}>{props.children}</Typography>
 
-    )
-}
 

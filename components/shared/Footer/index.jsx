@@ -15,6 +15,7 @@ const useStyles = makeStyles(theme => ({
         // position: 'fixed',
         // bottom: '0',
 
+
     },
     footerContainer: {
         width: '90vw',
@@ -83,9 +84,9 @@ const useStyles = makeStyles(theme => ({
         },
         // color: colors.textColor,
     },
-    links: {
-        color: "red"
-    },
+    // links: {
+    //     color: "red"
+    // },
     icons: {
         marginTop: "10px"
     },
@@ -139,27 +140,27 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Quick Links</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Policy</a>
+                            <a >Policy</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Terms &amp; Condition</a>
+                            <a >Terms &amp; Condition</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Shipping</a>
+                            <a >Shipping</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Return</a>
+                            <a >Return</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>FAQs</a>
+                            <a >FAQs</a>
                         </Link>
                     </div>
 
@@ -168,22 +169,22 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Company</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>About Us</a>
+                            <a >About Us</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Affillate</a>
+                            <a >Affillate</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Career</a>
+                            <a >Career</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Contact</a>
+                            <a >Contact</a>
                         </Link>
                     </div>
 
@@ -192,17 +193,17 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Business</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Checkout</a>
+                            <a >Checkout</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>My account</a>
+                            <a >My account</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a className={classes.link}>Shop</a>
+                            <a >Shop</a>
                         </Link>
                     </div>
                 </div>

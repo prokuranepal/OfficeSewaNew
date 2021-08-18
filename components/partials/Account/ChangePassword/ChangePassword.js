@@ -1,16 +1,18 @@
+
+
 import React, { useState } from 'react'
-import UsernameInput from '../../elements/UsernameInput/UsernameInput'
-import PasswordInput from '../../elements/PasswordInput/PasswordInput'
+import UsernameInput from '../../../elements/UsernameInput/UsernameInput'
+import PasswordInput from '../../../elements/PasswordInput/PasswordInput'
 import Link from 'next/link'
-import PrimaryButton from '../../global/PrimaryButton'
-import { passwordRegex } from '../../utils/regex'
+import PrimaryButton from '../../../global/PrimaryButton'
+import { passwordRegex } from '../../../utils/regex'
 import { makeStyles } from '@material-ui/styles'
-import { colors } from '../../utils/colors'
-import { HeaderText } from '../../HeaderText'
+import { colors } from '../../../utils/colors'
+import { HeaderText } from '../../../HeaderText'
 const useStyles = makeStyles({
     changePassword: {
-        width: "100vw",
-        minHeight: "60vh",
+        // width: "100vw",
+        // minHeight: "60vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-start",
@@ -30,7 +32,7 @@ const useStyles = makeStyles({
         color: colors.primaryColor,
         margin: "1rem 0"
     }
-})
+});
 
 export const ChangePassword = () => {
     const classes = useStyles()

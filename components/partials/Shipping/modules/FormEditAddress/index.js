@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { Form, Input, Select } from 'antd';
 import { makeStyles, useTheme } from '@material-ui/styles';
 // import { color_var, color_black } from '../../../../public/static/data/dy_dummy_data_category';
-import { provinces, provinces_districts, zones, districts_zones, districts_places } from '../../../../../data/places';
+import { provinces, provinces_districts, zones, districts_zones, districts_places } from '../../../../../public/data/places';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { useEffect } from 'react';
 // import * as actions from '../../../../store/shipping/action';
@@ -96,7 +96,7 @@ const FormEditShippingAddress = props => {
     const color_val = 'red';
     return (
         <Form
-            onFinish={handleLoginSubmit}
+            // onFinish={handleLoginSubmit}
             // formLayout = 'vertical'
             >
             <Grid container>
@@ -323,7 +323,7 @@ const FormEditShippingAddress = props => {
             {/* <button className="ps-btn ps-btn--checkout" onClick={() => dispatch(action.saveShippingAddress(state.formData, state.saveAdd))} >Save Addresss</button> */}
             <div style={{ display: 'flex', direction: 'column', justifyContent: 'flex-end' }}>
                 <CustomButton style={{ marginRight: '20px', width: '180px' }} title={'Cancel'} onClick={props.close} primary={false} />
-                <CustomButton style={{ width: '180px' }} title={state.buttonText} primary={true} />
+                <CustomButton style={{ width: '180px' }} title={state.buttonText} primary={true} onClick={handleLoginSubmit}/>
 
             </div>
 
@@ -335,7 +335,7 @@ const FormEditShippingAddress = props => {
 const useStyles = makeStyles({
     formItem: {
         margin: '0px 10px'
-    }
+    },
 });
 
 

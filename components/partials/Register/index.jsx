@@ -272,13 +272,13 @@ export const Register = () => {
 
                         <Typography className={classes.options} variant="h5">Or, register with:</Typography>
                         <Grid container spacing={6} className={classes.socialContainer}>
-                            <Grid items xs={12} md={6} className={classes.primaryButtonContainer} >
+                            <Grid item xs={12} md={6} className={classes.primaryButtonContainer} >
                                 <Button variant="contained" className={`${classes.socialButton}  ${classes.primaryButton}`}  >
                                     <SiFacebook className={`${classes.icon} ${classes.facebook}`} />
                                     <Typography variant="span" className={classes.optionsText}>Facebook</Typography>
                                 </Button>
                             </Grid>
-                            <Grid items xs={12} md={6} className={classes.secondaryButtonContainer}>
+                            <Grid item xs={12} md={6} className={classes.secondaryButtonContainer}>
                                 <Button variant="contained" className={`${classes.socialButton}  ${classes.secondaryButton}`}  >
                                     <FcGoogle className={`${classes.icon} ${classes.google}`} />
                                     <Typography variant="span" className={classes.optionsText}>Google</Typography>

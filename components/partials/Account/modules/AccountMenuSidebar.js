@@ -3,24 +3,35 @@ import { makeStyles } from '@material-ui/styles';
 import { colors } from '../../../../theme/colors';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
+
+import Image from 'next/image'
 const AccountMenuSidebar = (props) => {
     const classes = useStyles();
+
+    const myLoader = ({ src, width, quality }) => {
+        return `https://scontent.fktm12-1.fna.fbcdn.net/v/t1.18169-9/19511462_1337493859638587_3362526149963183674_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=r25IQIRemrcAX-hcPlv&_nc_ht=scontent.fktm12-1.fna&oh=26a30a527d66d2857197bcbeebdbf1f0&oe=6143F92F`
+    }
+
     return (
         <div className={classes.navContainer}>
             <Grid container>
                 <Grid item xs={12} sm={4}>
-                    <img
-
-                        alt="User"
-                        width={30}
-                        // height={50}
-                        src={'images/logo.png'}
-                    />
+                    <div style={{textAlign: 'center'}}>
+                        <Image
+                            className={classes.userImage}
+                            alt="User"
+                            width={50}
+                            height={50}
+                            loader={myLoader}
+                            // src={"/images/epson.jpg"}
+                            src={'https://scontent.fktm12-1.fna.fbcdn.net/v/t1.18169-9/19511462_1337493859638587_3362526149963183674_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=r25IQIRemrcAX-hcPlv&_nc_ht=scontent.fktm12-1.fna&oh=26a30a527d66d2857197bcbeebdbf1f0&oe=6143F92F'}
+                        />
+                    </div>
                 </Grid>
                 <Grid item xs={12} sm={8}>
                     <div className={classes.user}>
-                    <div>Hello</div>
-                    <div>Swainstha@gmail.com</div>
+                        <div>Hello</div>
+                        <div>Swainstha@gmail.com</div>
                     </div>
                 </Grid>
             </Grid>
@@ -29,7 +40,7 @@ const AccountMenuSidebar = (props) => {
                     {props.data.map(link => (
                         <li key={link.text} className={classes.listItem}>
                             <Link href={link.url}>
-                                <a className={[classes.listItemA, link.active?classes.active:classes.inActive].join(' ')}>
+                                <a className={[classes.listItemA, link.active ? classes.active : classes.inActive].join(" ")}>
                                     <i className={link.icon}></i>
                                     {link.text}
                                 </a>
@@ -81,8 +92,8 @@ const useStyles = makeStyles({
         fontWeight: 500,
         textTransform: 'capitalize',
         textDecoration: 'none',
-        backgroundColor: 'white',
-        color: colors.primary,
+        // backgroundColor: 'white',
+        // color: colors.primary,
         '&:hover': {
             backgroundColor: colors.primary,
             color: 'white',
@@ -91,6 +102,11 @@ const useStyles = makeStyles({
     },
     user: {
         padding: '15px 10px'
+    },
+    userImage: {
+        
+        borderRadius: '50px',
+        
     }
 });
 

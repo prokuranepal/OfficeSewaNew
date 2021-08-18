@@ -2,11 +2,13 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Space, Popconfirm, Tag} from 'antd';
 import { useRouter } from 'next/router';
+import {addressess} from '../../../../../public/data/data';
 // import { useMutation } from "@apollo/client";
 // import { DELETE_ADDRESS } from '../../../apollo/shipping/shipping';
 // import { useSelector, useDispatch } from 'react-redux';
 // import * as actions from '../../../store/shipping/action';
-import {addressess} from '../../../../../data/data';
+
+
 const AddressTable = props => {
 
     const router = useRouter();
