@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 import ProductCart from '../../elements/Product/ProductCart';
 import CustomButton from '../../elements/CustomButton';
-import { cart } from '../../../data/data';
+import { cart } from '../../../public/data/data';
 import { colors } from '../../../theme/colors';
 
 const ShoppingCart = (props) => {

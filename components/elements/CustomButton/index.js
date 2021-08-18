@@ -6,7 +6,7 @@ import LinkButton from '../LinkButton';
 const CustomButton = (props) => {
     const classes = useStyles(props);
     return (
-        <Link href={props.url}>
+        <Link href={props.url} className={classes.link}>
             <button className={classes.root} style={props.style} onClick={props.onClick}>
                 {props.title}
             </button>
@@ -16,6 +16,7 @@ const CustomButton = (props) => {
 
 const useStyles = makeStyles({
     root: props => ({
+        
         display: 'block',
         padding: '10px 20px',
         fontSize: '16px',
@@ -33,6 +34,9 @@ const useStyles = makeStyles({
             backgroundColor: props.primary ? colors.secondary : colors.primary
         }
     }),
+    link: {
+        textDecoration: 'none',
+    }
 
 });
 

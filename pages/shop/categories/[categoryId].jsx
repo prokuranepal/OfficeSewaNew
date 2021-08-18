@@ -32,8 +32,8 @@ const categoryPage = (props) => {
     
             {/* <MegaMenu menuCat={menuCat}/>  */}
             <Breadcrumb breadcrumb={breadcrumb} />
-            <div style={{padding:'20px 20px 20px 50px', 'background-color':'white'}}>
-            <div style={{'font-size':18, 'color':'#1961a5', 'font-weight':'bold', 'padding-bottom':10}}>
+            <div style={{padding:'20px 20px 20px 50px', backgroundColor:'white'}}>
+            <div style={{fontSize:18, color:'#1961a5', fontWeight:'bold', paddingBottom:10}}>
             {catNameTitle}
             </div>
             {/* <Grid item xs={12}> */}

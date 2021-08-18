@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
+import Link from 'next/link'
 import 'antd/dist/antd.css';
+import Image from 'next/image'
 // import { Row, Grid, Image } from 'antd';
 import Grid from '@material-ui/core/Grid';
-import Link from 'next/link';
+// import Link from 'next/link';
 import MiniCart from '../MiniCart';
 import MenuDropDown from '../MenuDropDown';
 import { HeartOutlined, ShoppingCartOutlined, UserOutlined, BarChartOutlined } from '@ant-design/icons';
 // import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 import Grow from '@material-ui/core/Grow';
 import { colors } from '../../../../theme/colors';
+// import LinkButton from '../../../elements/LinkButton';
 const Topbar = (props) => {
     const [showDepartments, setShowDepartments] = useState(false);
     const [showMiniCart, setShowMiniCart] = useState(false);
@@ -50,13 +53,15 @@ const Topbar = (props) => {
             <Grid container >
                 <Grid item className={classes.topItem} xs={12} sm={4} md={3}>
                     <div className={showDepartments ? classes.invisible : classes.visible}>
-                        <img
-
-                            alt="OfficeSewas"
-                            width={150}
-                            // height={50}
-                            src={'images/logo.png'}
-                        />
+                        <Link href={'/'} >
+                            <Image
+                                className={classes.logo}
+                                alt="OfficeSewas"
+                                width={150}
+                                height={25}
+                                src={'/images/logo.png'}
+                            />
+                        </Link>
                     </div>
                     <div className={showDepartments ? classes.visible : classes.invisible}>
                         <MenuDropDown />
@@ -113,7 +118,8 @@ const useStyles = makeStyles({
         display: 'block',
         position: 'relative',
         top: 0,
-        zIndex: 100
+        zIndex: 100,
+        padding: '10px 0px'
         // flex: 1
     },
     topItem: {
@@ -190,8 +196,11 @@ const useStyles = makeStyles({
     },
     login: {
 
+    },
+    logo: {
+        cursor: 'pointer'
     }
-}, { name: "MuiComponent" });
+});
 
 
 export default Topbar;

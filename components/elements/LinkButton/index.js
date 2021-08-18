@@ -5,7 +5,7 @@ import { colors } from '../../../theme/colors';
 const LinkButton = (props) => {
     const classes = useStyles();
     return (
-        <div className={classes.root} onClick={props.onClick}>
+        <div className={classes.root} style={props.style} onClick={props.onClick}>
             {props.icon?props.icon:null}
             <div>{props.title}</div>
         </div>

@@ -19,9 +19,17 @@ import Footer from '../components/shared/Footer';
 import HomeLayout from '../components/layouts/HomeLayout';
 import FooterEye from '../components/shared/FooterEye'
 import ProductDetails from '../components/shared/ProductDetails';
-
-
+import HomePage from './home/index';
 export default function Home() {
+  return (
+    <div>
+      <HomePage/>
+      {/* <Topbar />
+      <p className="header">hello</p> */}
+    </div>
+  )}
+
+// export default function Home() {
 
   // const breadCrumb = [
   //   {
@@ -34,7 +42,7 @@ export default function Home() {
   // ];
 
 
-  return (
+  // return (
     // <div>
 
 
@@ -52,7 +60,7 @@ export default function Home() {
     //     </div>
     //   </HomeLayout>
     // </div>
-    <ProductDetails />
+    // <ProductDetails />
     // <FooterEye />
     // <div >
     //   {/* <Topbar /> */}
@@ -63,5 +71,5 @@ export default function Home() {
     //   {/* <ChangePassword /> */}
     //   {/* <p className="header">hello</p> */}
     // </div >
-  )
-}
+  // )
+// }
