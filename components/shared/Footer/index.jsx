@@ -139,27 +139,27 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Quick Links</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Policy</a>
+                            <a className={classes.link}>Policy</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Terms &amp; Condition</a>
+                            <a className={classes.link}>Terms &amp; Condition</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Shipping</a>
+                            <a className={classes.link}>Shipping</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Return</a>
+                            <a className={classes.link}>Return</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>FAQs</a>
+                            <a className={classes.link}>FAQs</a>
                         </Link>
                     </div>
 
@@ -168,12 +168,12 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Company</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>About Us</a>
+                            <a className={classes.link}>About Us</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Affillate</a>
+                            <a className={classes.link}>Affillate</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
@@ -183,7 +183,7 @@ const Footer = () => {
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Contact</a>
+                            <a className={classes.link}>Contact</a>
                         </Link>
                     </div>
 
@@ -192,17 +192,17 @@ const Footer = () => {
                     <Typography variant="h6" className={classes.footerTitle}>Business</Typography>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Checkout</a>
+                            <a className={classes.link}>Checkout</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>My account</a>
+                            <a className={classes.link}>My account</a>
                         </Link>
                     </div>
                     <div className={classes.links}>
                         <Link href="#" className={classes.link}>
-                            <a classname={classes.link}>Shop</a>
+                            <a className={classes.link}>Shop</a>
                         </Link>
                     </div>
                 </div>
